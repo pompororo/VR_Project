@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1bf2a805-6488-fb13-ec03-d6dd87629a0b}</ProjectGuid>
+    <ProjectGuid>{5dcea7fc-fb11-44aa-0260-7b4edf71d305}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -733,7 +733,16 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>D:\1640704753\VR test\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Android.Types">
+     <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Android.Gradle">
+     <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Android.GradleProject">
+     <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.GradleProject.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -1102,340 +1111,349 @@
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Management">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Management.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
      </Reference>
      <Reference Include="PPv2URPConverters">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Oculus.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Sysroot.Linux_x86_64">
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Timeline.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.ShaderGraph.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <Reference Include="Unity.Burst">
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline.Editor">
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Shared.Editor">
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ShaderGraph.Editor">
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.SpatialTracking">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualStudio.Editor">
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.SpatialTracking">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Oculus">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.SysrootPackage.Editor">
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Searcher.Editor">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>D:\1640704753\VR test\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>D:\1630707360\suriya_project\Final_demo_suriya\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Meta.WitAi.Lib.csproj">
-      <Project>{53d9abaa-2bcd-3d38-67ac-0b145323c843}</Project>
+      <Project>{2fe1dd11-cde5-f3da-9083-f9be3b621ae3}</Project>
       <Name>Meta.WitAi.Lib</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.OVR.Editor.csproj">
-      <Project>{57ad40bf-ca10-494d-ba52-2afbaa2b6bce}</Project>
+      <Project>{5f9679f0-f1b7-67d2-05d8-822ce249349e}</Project>
       <Name>Oculus.Interaction.OVR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Dictation.csproj">
-      <Project>{8f38d715-26fa-ec2d-19dd-3cbc9f41c74d}</Project>
+      <Project>{0de69763-341c-36f1-4fd4-0e14eac4ea86}</Project>
       <Name>Facebook.Wit.Dictation</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.LiveUnderstanding.csproj">
-      <Project>{0add7877-32fd-f5fb-5011-ec9ce4a0ab81}</Project>
+      <Project>{f9493300-a845-9aaf-0f5e-8d15a36fd51a}</Project>
       <Name>Meta.Voice.Samples.LiveUnderstanding</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
-      <Project>{c8e6ba45-e347-30fe-892f-a3d18c31b4ff}</Project>
+      <Project>{9f4eb765-312f-29bc-03bb-9c7cea62a9dd}</Project>
       <Name>VoiceSDK.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.TTS.Samples.csproj">
-      <Project>{7ab97ba0-1bab-7e1c-255f-6da78def19ab}</Project>
+      <Project>{7b29f206-81b3-d694-798c-c89f94e1d926}</Project>
       <Name>Meta.WitAi.TTS.Samples</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{cc30018b-66ad-3e3d-687d-8055e9b44470}</Project>
+      <Project>{58597684-f7ff-4a21-3419-e13510b3aa3d}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.VoiceSDK.Mic.WebGL.csproj">
-      <Project>{8de64a36-9ce7-3396-056c-efdb28a9ab5f}</Project>
+      <Project>{b129b7e5-4e31-8a7d-ea6d-9e21160ee98f}</Project>
       <Name>Meta.VoiceSDK.Mic.WebGL</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Utils.Editor.csproj">
-      <Project>{5cc0a5ef-d129-8b19-c219-83f82ddee0a5}</Project>
+      <Project>{5d9f4817-4dc1-de65-2511-d2742b4f9f6e}</Project>
       <Name>Oculus.AudioManager.Utils.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.Editor.csproj">
-      <Project>{95f494d9-a7cf-6c2a-2b3d-add49ea086e2}</Project>
+      <Project>{dbee5ecf-d0c9-1c04-09eb-8cefe52b61cb}</Project>
       <Name>Oculus.Platform.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.Editor.csproj">
-      <Project>{f868cf89-7a33-dac0-8986-2d814e20dad2}</Project>
+      <Project>{44922627-181d-b8be-2c95-1c6a5a1b0165}</Project>
       <Name>Oculus.LipSync.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.OVR.csproj">
-      <Project>{2b9737ca-1de4-ba96-c112-2f82585edc7c}</Project>
+      <Project>{1b265896-3460-421c-5a87-411737aac774}</Project>
       <Name>Oculus.Interaction.OVR</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Telemetry.csproj">
-      <Project>{29c629b7-09a5-5984-aeb6-863811a8c645}</Project>
+      <Project>{4a201a32-4c43-fc2a-79c4-3a980e48646f}</Project>
       <Name>VoiceSDK.Telemetry</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.csproj">
-      <Project>{f27ddb71-06a1-fe69-2e79-587f81293000}</Project>
+      <Project>{e17cc708-a91a-be18-95bb-c34e62b5c4c3}</Project>
       <Name>Oculus.AudioManager</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Spatializer.csproj">
-      <Project>{4e0c7eb9-6f15-f552-e0cb-8812b78b4a80}</Project>
+      <Project>{6d2a22bd-9ea4-8054-ba42-780acb34eb98}</Project>
       <Name>Oculus.Spatializer</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.VSDKHub.Editor.csproj">
-      <Project>{f6ef094e-d708-adb4-88ec-ac4a2bab57b8}</Project>
+      <Project>{bf09eca5-0cbd-669f-6650-27c20dd21124}</Project>
       <Name>Meta.Voice.VSDKHub.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Hub.Editor.csproj">
-      <Project>{9321dced-884a-a896-0406-23fe729b1db5}</Project>
+      <Project>{fd230b6e-af95-48f5-65ee-be9d9a7c7271}</Project>
       <Name>Meta.Voice.Hub.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.TTS.csproj">
-      <Project>{465fcbca-160b-731a-ca1b-b9e63a434051}</Project>
+      <Project>{1d0b3c4e-0f03-8b71-8110-6f3a4bf90e5b}</Project>
       <Name>Meta.WitAi.TTS</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.TTSVoices.csproj">
-      <Project>{1e319eec-334a-c8b2-051c-b06c3d5222dc}</Project>
+      <Project>{dd66ce4f-1c54-fd94-7cdb-53a805855579}</Project>
       <Name>Meta.Voice.Samples.TTSVoices</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.csproj">
-      <Project>{fc5f7121-cc59-4b4f-ca71-1ddbe46db5cb}</Project>
+      <Project>{b4692596-e0ce-f6ea-a95f-690dc637f695}</Project>
       <Name>Meta.WitAi</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.InterfaceSupport.csproj">
-      <Project>{bb2eb480-f08f-01f3-3775-6a611c4fc284}</Project>
+      <Project>{d6b73174-af36-f26e-e9fa-5aca4063c4fc}</Project>
       <Name>Oculus.Interaction.InterfaceSupport</Name>
     </ProjectReference>
-    <ProjectReference Include="Facebook.Wit.Dictation.Editor.csproj">
-      <Project>{9008b3af-3c97-0f41-570c-58364f73ad71}</Project>
-      <Name>Facebook.Wit.Dictation.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.OVR.Samples.csproj">
-      <Project>{2b83ccda-254b-34a9-213a-8de939986621}</Project>
+      <Project>{f49c81d5-b101-0f41-c876-3d0f68e0184c}</Project>
       <Name>Oculus.Interaction.OVR.Samples</Name>
     </ProjectReference>
+    <ProjectReference Include="Facebook.Wit.Dictation.Editor.csproj">
+      <Project>{0727e53f-9a51-fbdd-23f9-730c0f55e194}</Project>
+      <Name>Facebook.Wit.Dictation.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.BuiltInTimer.csproj">
-      <Project>{18f4f886-9d0f-b392-1947-cf341fa8a4e7}</Project>
+      <Project>{62e40e79-171d-881d-ef55-b249f28864c8}</Project>
       <Name>Meta.Voice.Samples.BuiltInTimer</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Platform.csproj">
-      <Project>{28c7808b-9548-4b99-075e-4be89ec0fc76}</Project>
+      <Project>{b284c662-db89-8497-690a-1069c864dd31}</Project>
       <Name>Oculus.Platform</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Dictation.Runtime.csproj">
-      <Project>{6b7b75db-0417-0126-7cb2-af4de2f5802a}</Project>
+      <Project>{92638fa3-7bba-e480-fba1-f79d49f00b0d}</Project>
       <Name>VoiceSDK.Dictation.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.LipSync.csproj">
-      <Project>{0b201525-c55d-84e2-424e-ce046a1ccab6}</Project>
+      <Project>{32695d71-aea1-1da6-b861-b5cee7cc66b6}</Project>
       <Name>Oculus.LipSync</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.Dictation.csproj">
-      <Project>{af4abb2d-6af0-8477-39b0-d6977e2f796d}</Project>
+      <Project>{ae5cf4d0-bc5f-b19d-e13b-bd5a27be2943}</Project>
       <Name>Meta.Voice.Samples.Dictation</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.Conduit.csproj">
-      <Project>{d34f9d03-031f-04d8-42a2-a90e031ac3ca}</Project>
+      <Project>{0f66a317-bdef-64ec-413c-6f6fb6c306f9}</Project>
       <Name>Meta.WitAi.Conduit</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Dictation.Editor.csproj">
-      <Project>{423d4a37-3592-29d6-b86d-9b73e5b50f5e}</Project>
+      <Project>{a988ed17-ee81-ca96-835e-73e778c1f6ae}</Project>
       <Name>VoiceSDK.Dictation.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.Spatializer.Editor.csproj">
-      <Project>{fc7d20b9-ca68-604d-a32f-0ede35cd6454}</Project>
-      <Name>Oculus.Spatializer.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Meta.WitAi.TTS.Editor.csproj">
-      <Project>{296b391f-7edb-4a65-895d-094304430f0e}</Project>
+      <Project>{8e9015f2-abf3-87c5-010b-27bd66b8d185}</Project>
       <Name>Meta.WitAi.TTS.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Oculus.Spatializer.Editor.csproj">
+      <Project>{ed837757-6d02-d9ac-d78c-42c1ede402a4}</Project>
+      <Name>Oculus.Spatializer.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.Editor.csproj">
-      <Project>{3aaf14fd-3254-2e08-3113-deefd6915c5f}</Project>
+      <Project>{556b2e28-1666-6e75-bcd7-ff4f30b27c36}</Project>
       <Name>Oculus.Interaction.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
-      <Project>{a1ac1448-7914-c3a6-7538-c7668f159367}</Project>
+      <Project>{a44cf698-828f-9564-8cd1-691c9f0b4fca}</Project>
       <Name>AssistantCoreSDKRuntime</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.LightTraits.csproj">
-      <Project>{7020e015-cf3d-8785-0b7f-7007b15422ea}</Project>
+      <Project>{29e8fdf6-94bb-399d-731a-9be6eb791c24}</Project>
       <Name>Meta.Voice.Samples.LightTraits</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.XR.BuildingBlocks.csproj">
-      <Project>{11c55268-8025-b236-eead-40c7a2342ca2}</Project>
+      <Project>{eef007e9-c056-dedc-11b4-4f7695472ece}</Project>
       <Name>Meta.XR.BuildingBlocks</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.Shapes.csproj">
-      <Project>{ce1325f7-ef9c-1750-1f42-35dfbe11362b}</Project>
+      <Project>{71e235a8-bb19-8360-a0d4-c4a69f686667}</Project>
       <Name>Meta.Voice.Samples.Shapes</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.csproj">
-      <Project>{151af363-5a7c-cdf6-4ba8-8c164c2ed3fc}</Project>
+      <Project>{675ebfce-4278-60d9-1d77-38ed10ebc181}</Project>
       <Name>Oculus.Interaction</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Editor.csproj">
-      <Project>{e1326539-0677-4f60-faad-f584d07cffdc}</Project>
+      <Project>{fd4d8dff-df87-e340-fcf3-94a4b047ccf6}</Project>
       <Name>VoiceSDK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.ShapesConduit.csproj">
-      <Project>{c51e3600-dc64-69ea-50e8-7f95213ca2de}</Project>
+      <Project>{153bd361-ef73-b98d-fcbf-7439aed470f7}</Project>
       <Name>Meta.Voice.Samples.ShapesConduit</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
-      <Project>{7c56ab9f-891b-693c-a80d-6e8e7aa50f30}</Project>
+      <Project>{66b8f078-52c7-4ddd-6c90-3ba0b77151a9}</Project>
       <Name>Oculus.VR.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.VoiceSDK.Mic.Other.csproj">
-      <Project>{bd00998c-9b47-94a0-2c56-8e02d064fa09}</Project>
+      <Project>{f8d60155-095c-7b43-e11d-f645d4ed5cf0}</Project>
       <Name>Meta.VoiceSDK.Mic.Other</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.Editor.csproj">
-      <Project>{90cd4c55-6387-06a4-43a8-815807cef879}</Project>
+      <Project>{0187572d-075c-3d4e-fcb9-9d8cf3c39dbb}</Project>
       <Name>Meta.WitAi.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.Conduit.Editor.csproj">
-      <Project>{74b61e7e-00c8-3dfc-1f68-014317ea32a6}</Project>
+      <Project>{61c208dd-17ef-52db-81be-a61bfee5fa7b}</Project>
       <Name>Meta.WitAi.Conduit.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.VoiceSDK.Mic.Common.csproj">
-      <Project>{80183e57-1231-4a43-b392-b18e19455a97}</Project>
+      <Project>{584cbc95-d384-892d-8d7b-b2c4142c3c9d}</Project>
       <Name>Meta.VoiceSDK.Mic.Common</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.XR.BuildingBlocks.Editor.csproj">
-      <Project>{5567ac6c-0aa8-08ce-a0de-877a4411154b}</Project>
+      <Project>{18101fb2-f7d7-120b-de6d-bdbeaa1f1e19}</Project>
       <Name>Meta.XR.BuildingBlocks.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.AudioManager.Audio.Editor.csproj">
-      <Project>{cf36dcb2-f01b-a0ff-e320-3838ee698a37}</Project>
+      <Project>{8ced3c93-5414-39d5-cc12-4295ff6e6384}</Project>
       <Name>Oculus.AudioManager.Audio.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Scripts.Editor.csproj">
-      <Project>{4719ff51-dfd1-cd90-a721-a21b9b6f518c}</Project>
+      <Project>{571fbd48-75b4-38fd-f709-24f592783432}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.Samples.Editor.csproj">
-      <Project>{0d58a3e1-63df-231e-53a5-41d3cbfc1735}</Project>
+      <Project>{b507c804-2a92-2148-6ff0-77411463759e}</Project>
       <Name>Oculus.Interaction.Samples.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Hub.Runtime.csproj">
-      <Project>{483593d5-715f-8653-8098-8eba6addab8c}</Project>
+      <Project>{8d01570e-58f6-9742-ebc0-3962672e4b55}</Project>
       <Name>Meta.Voice.Hub.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKEditor.csproj">
-      <Project>{99f839ce-667c-f8ef-5091-4c08cda5b493}</Project>
+      <Project>{6dfe1d0b-f431-7791-25c3-bcfcfc54005a}</Project>
       <Name>AssistantCoreSDKEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.Chess.csproj">
-      <Project>{f83106e6-5e6f-9885-5a63-1ec0fdca5b6a}</Project>
+      <Project>{99530abb-32c4-1d36-3471-843af98a7f11}</Project>
       <Name>Meta.Voice.Samples.Chess</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAI.Lib.Editor.csproj">
-      <Project>{baf202c5-9ec6-1d4e-b5b9-3b1e255de18d}</Project>
+      <Project>{6637326d-829e-8ba0-3120-24a241599311}</Project>
       <Name>Meta.WitAI.Lib.Editor</Name>
     </ProjectReference>
   </ItemGroup>
