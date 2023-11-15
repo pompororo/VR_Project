@@ -1158,6 +1158,9 @@
      <Reference Include="Unity.Burst.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation">
+     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
@@ -1202,6 +1205,9 @@
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
@@ -1296,6 +1302,9 @@
      <Reference Include="Unity.SysrootPackage.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.AI.Navigation.Updater">
+     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
@@ -1310,6 +1319,9 @@
      </Reference>
      <Reference Include="Unity.Searcher.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.AI.Navigation.Editor">
+     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
