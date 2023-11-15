@@ -91,6 +91,7 @@
      <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\InteractableToolsCreator.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\SimpleCapsuleWithStickMovement.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\CowController.cs" />
+     <Compile Include="Assets\polyperfect\Poly Halloween\- Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\Haptics\LocalizedHaptics.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\EnableUnpremultipliedAlpha.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SceneSampler.cs" />
@@ -146,6 +147,7 @@
      <Compile Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\Ui\UiVectorInspector.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts\GrabManager.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\DebugUI\DebugUISample.cs" />
+     <Compile Include="Assets\polyperfect\Poly Halloween\- Scripts\MouseLook.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportTransitionBlink.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\HandMeshUI.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\HandsManager.cs" />
@@ -191,6 +193,7 @@
      <None Include="Library\PackageCache\com.unity.modules.subsystems@1.0.0\package.json" />
      <None Include="Library\PackageCache\com.unity.render-pipelines.universal@14.0.9\package.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Textures\Grass" />
      <None Include="Library\PackageCache\com.unity.modules.jsonserialize@1.0.0\package.json" />
      <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\WireframeShader.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\Hidden.shader" />
@@ -216,6 +219,7 @@
      <None Include="Library\PackageCache\com.unity.modules.ai@1.0.0\package.json" />
      <Folder Include="Assets\Resources" />
      <Folder Include="Assets\Oculus\Voice\Lib" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Scripts" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Lib\Wit" />
      <Folder Include="Library\PackageCache\com.unity.modules.animation@1.0.0" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Scripts" />
@@ -233,6 +237,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Prefabs\StylusTip" />
      <Folder Include="Assets\Oculus\Voice\Features\VoiceHub\Scripts" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthrough.shader" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Particles" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video\Scripts" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Audio" />
      <Folder Include="Assets\Oculus\Voice\Samples\LightTraits\Materials" />
@@ -291,6 +296,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Prefabs\OutlineItems" />
      <Folder Include="Assets\Oculus\Voice\Features\Hub" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature\Trees" />
      <Folder Include="Library\PackageCache\com.unity.modules.screencapture@1.0.0" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\Dictation\Scripts" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Textures" />
@@ -305,6 +311,7 @@
      <Folder Include="Assets\Oculus\Voice\Documentation" />
      <None Include="Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0\package.json" />
      <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\ToyCubeWithOutline.shader" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Halloween" />
      <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples" />
      <Folder Include="Library\PackageCache\com.unity.render-pipelines.universal@14.0.9\Textures\FilmGrain" />
@@ -347,6 +354,7 @@
      <Folder Include="Library\PackageCache\com.unity.modules.vr@1.0.0" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Meshs" />
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples\LightTraits" />
+     <Folder Include="Assets\GI477_Interaction\Scenes" />
      <Folder Include="Library\PackageCache\com.unity.modules.physics2d@1.0.0" />
      <Folder Include="Assets\Oculus\Voice\Samples\ShapesConduit" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts" />
@@ -408,6 +416,7 @@
      <Folder Include="Library\PackageCache\com.unity.modules.tilemap@1.0.0" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Prefabs" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Prefabs" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Models" />
      <Folder Include="Assets\XR\Settings" />
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples\ShapesConduit" />
@@ -420,6 +429,7 @@
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Samples\Dictation\Scenes" />
      <None Include="Assets\Oculus\Voice\Lib\Wit.ai\Resources\witai_texts_en-us.json" />
      <Folder Include="Library\PackageCache\com.unity.render-pipelines.universal@14.0.9\Textures" />
+     <Folder Include="Assets\GI477_Interaction" />
      <Folder Include="Assets\Oculus\Voice\Features\Hub\Scripts" />
      <Folder Include="Assets\Oculus\Voice\Lib\PlatformCompatibility\Scripts" />
      <Folder Include="Assets\Oculus\Voice\Features" />
@@ -440,6 +450,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android" />
      <None Include="Library\PackageCache\com.unity.render-pipelines.universal@14.0.9\ValidationExceptions.json" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools" />
+     <Folder Include="Assets\polyperfect" />
      <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\TutorialInfo\Scripts" />
      <Folder Include="Assets\TextMesh Pro\Fonts" />
@@ -462,14 +473,18 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Documentation" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Prefabs" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Textures\Nature" />
      <Folder Include="Assets\Oculus\Voice\Features\VoiceHub" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\People" />
      <None Include="Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0\package.json" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Resources" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Audio" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Documentation\Samples" />
      <Folder Include="Assets\Oculus\Voice\Samples\Chess\Materials" />
+     <Folder Include="Assets\polyperfect\Poly Halloween" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SharedAssets\Prefabs" />
      <Folder Include="Library\PackageCache\com.unity.render-pipelines.universal@14.0.9\Textures\BlueNoise16" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Documentation" />
@@ -477,7 +492,10 @@
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples\Chess" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Locomotion\Models" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Prefabs" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Demo Scenes" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Scripts" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Textures\VFX" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Textures" />
      <Folder Include="Library\PackageCache\com.unity.modules.vehicles@1.0.0" />
      <None Include="Library\PackageCache\com.unity.modules.xr@1.0.0\package.json" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\DebugUI\Prefabs" />
@@ -514,6 +532,7 @@
      <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor" />
      <Folder Include="Assets\Oculus\Interaction" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Textures\Universal" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Locomotion" />
      <None Include="Library\PackageCache\com.unity.modules.androidjni@1.0.0\package.json" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\TTS\Documentation\Images" />
@@ -526,6 +545,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\SceneObjectPreview.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered.shader" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature\Grass" />
      <None Include="Assets\Oculus\Voice\Resources\voicesdk_texts_en-us.json" />
      <Folder Include="Library\PackageCache\com.unity.render-pipelines.universal@14.0.9\Textures\BlueNoise16\L" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Scripts" />
@@ -558,6 +578,7 @@
      <Folder Include="Assets\Oculus" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\OVROverlay\Textures" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Prefabs\Ui" />
+     <Folder Include="Assets\Texture" />
      <Folder Include="Assets\Samples\OpenXR Plugin\1.8.2\Controller" />
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples\Shapes" />
      <None Include="Library\PackageCache\com.unity.render-pipelines.universal@14.0.9\ValidationConfig.json" />
@@ -570,6 +591,7 @@
      <Folder Include="Library\PackageCache\com.unity.ugui@1.0.0" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Models" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\CustomHands" />
+     <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature\Rocks" />
      <None Include="Library\PackageCache\com.unity.modules.ui@1.0.0\package.json" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video" />
@@ -1197,11 +1219,11 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.XR.Management">
-     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.Editor">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.XR.Management">
+     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.MockHMD">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.MockHMD.dll</HintPath>
@@ -1254,11 +1276,11 @@
      <Reference Include="Unity.XR.MockHMD.Editor">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.MockHMD.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Sysroot.Linux_x86_64">
-     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Sysroot.Linux_x86_64">
+     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.XR.LegacyInputHelpers">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
@@ -1299,14 +1321,14 @@
      <Reference Include="Unity.Timeline">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.InputSystem">
+     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.InputSystem.ForUI">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Oculus">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InputSystem">
-     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
@@ -1337,10 +1359,6 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Meta.WitAi.Lib.csproj">
-      <Project>{2fe1dd11-cde5-f3da-9083-f9be3b621ae3}</Project>
-      <Name>Meta.WitAi.Lib</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.OVR.Editor.csproj">
       <Project>{5f9679f0-f1b7-67d2-05d8-822ce249349e}</Project>
       <Name>Oculus.Interaction.OVR.Editor</Name>
@@ -1352,6 +1370,10 @@
     <ProjectReference Include="Meta.Voice.Samples.LiveUnderstanding.csproj">
       <Project>{f9493300-a845-9aaf-0f5e-8d15a36fd51a}</Project>
       <Name>Meta.Voice.Samples.LiveUnderstanding</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.Lib.csproj">
+      <Project>{2fe1dd11-cde5-f3da-9083-f9be3b621ae3}</Project>
+      <Name>Meta.WitAi.Lib</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
       <Project>{5459932d-579e-beb8-23cd-b7336264811b}</Project>
@@ -1401,13 +1423,13 @@
       <Project>{e17cc708-a91a-be18-95bb-c34e62b5c4c3}</Project>
       <Name>Oculus.AudioManager</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.Spatializer.csproj">
-      <Project>{6d2a22bd-9ea4-8054-ba42-780acb34eb98}</Project>
-      <Name>Oculus.Spatializer</Name>
-    </ProjectReference>
     <ProjectReference Include="Meta.Voice.VSDKHub.Editor.csproj">
       <Project>{bf09eca5-0cbd-669f-6650-27c20dd21124}</Project>
       <Name>Meta.Voice.VSDKHub.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Spatializer.csproj">
+      <Project>{6d2a22bd-9ea4-8054-ba42-780acb34eb98}</Project>
+      <Name>Oculus.Spatializer</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Hub.Editor.csproj">
       <Project>{fd230b6e-af95-48f5-65ee-be9d9a7c7271}</Project>
@@ -1441,13 +1463,13 @@
       <Project>{d6b73174-af36-f26e-e9fa-5aca4063c4fc}</Project>
       <Name>Oculus.Interaction.InterfaceSupport</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.Interaction.OVR.Samples.csproj">
-      <Project>{f49c81d5-b101-0f41-c876-3d0f68e0184c}</Project>
-      <Name>Oculus.Interaction.OVR.Samples</Name>
-    </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Dictation.Editor.csproj">
       <Project>{0727e53f-9a51-fbdd-23f9-730c0f55e194}</Project>
       <Name>Facebook.Wit.Dictation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Interaction.OVR.Samples.csproj">
+      <Project>{f49c81d5-b101-0f41-c876-3d0f68e0184c}</Project>
+      <Name>Oculus.Interaction.OVR.Samples</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.BuiltInTimer.csproj">
       <Project>{62e40e79-171d-881d-ef55-b249f28864c8}</Project>
@@ -1537,13 +1559,13 @@
       <Project>{2a21f096-7f2f-5eb3-86ec-fc86fecbe58c}</Project>
       <Name>Unity.RenderPipeline.Universal.ShaderLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="VoiceSDK.Editor.csproj">
-      <Project>{fd4d8dff-df87-e340-fcf3-94a4b047ccf6}</Project>
-      <Name>VoiceSDK.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.ShapesConduit.csproj">
       <Project>{153bd361-ef73-b98d-fcbf-7439aed470f7}</Project>
       <Name>Meta.Voice.Samples.ShapesConduit</Name>
+    </ProjectReference>
+    <ProjectReference Include="VoiceSDK.Editor.csproj">
+      <Project>{fd4d8dff-df87-e340-fcf3-94a4b047ccf6}</Project>
+      <Name>VoiceSDK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
       <Project>{66b8f078-52c7-4ddd-6c90-3ba0b77151a9}</Project>

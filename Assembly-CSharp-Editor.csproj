@@ -728,11 +728,11 @@
      <Reference Include="UnityEngine.TestRunner">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.XR.Management">
-     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.Editor">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.XR.Management">
+     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.MockHMD">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.MockHMD.dll</HintPath>
@@ -785,11 +785,11 @@
      <Reference Include="Unity.XR.MockHMD.Editor">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.MockHMD.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Sysroot.Linux_x86_64">
-     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Sysroot.Linux_x86_64">
+     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.XR.LegacyInputHelpers">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
@@ -830,14 +830,14 @@
      <Reference Include="Unity.Timeline">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.InputSystem">
+     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.InputSystem.ForUI">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Oculus">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.InputSystem">
-     <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>C:\Users\pom\Documents\GitHub\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
@@ -872,10 +872,6 @@
       <Project>{5dcea7fc-fb11-44aa-0260-7b4edf71d305}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="Meta.WitAi.Lib.csproj">
-      <Project>{2fe1dd11-cde5-f3da-9083-f9be3b621ae3}</Project>
-      <Name>Meta.WitAi.Lib</Name>
-    </ProjectReference>
     <ProjectReference Include="Oculus.Interaction.OVR.Editor.csproj">
       <Project>{5f9679f0-f1b7-67d2-05d8-822ce249349e}</Project>
       <Name>Oculus.Interaction.OVR.Editor</Name>
@@ -887,6 +883,10 @@
     <ProjectReference Include="Meta.Voice.Samples.LiveUnderstanding.csproj">
       <Project>{f9493300-a845-9aaf-0f5e-8d15a36fd51a}</Project>
       <Name>Meta.Voice.Samples.LiveUnderstanding</Name>
+    </ProjectReference>
+    <ProjectReference Include="Meta.WitAi.Lib.csproj">
+      <Project>{2fe1dd11-cde5-f3da-9083-f9be3b621ae3}</Project>
+      <Name>Meta.WitAi.Lib</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj">
       <Project>{5459932d-579e-beb8-23cd-b7336264811b}</Project>
@@ -936,13 +936,13 @@
       <Project>{e17cc708-a91a-be18-95bb-c34e62b5c4c3}</Project>
       <Name>Oculus.AudioManager</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.Spatializer.csproj">
-      <Project>{6d2a22bd-9ea4-8054-ba42-780acb34eb98}</Project>
-      <Name>Oculus.Spatializer</Name>
-    </ProjectReference>
     <ProjectReference Include="Meta.Voice.VSDKHub.Editor.csproj">
       <Project>{bf09eca5-0cbd-669f-6650-27c20dd21124}</Project>
       <Name>Meta.Voice.VSDKHub.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Spatializer.csproj">
+      <Project>{6d2a22bd-9ea4-8054-ba42-780acb34eb98}</Project>
+      <Name>Oculus.Spatializer</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Hub.Editor.csproj">
       <Project>{fd230b6e-af95-48f5-65ee-be9d9a7c7271}</Project>
@@ -976,13 +976,13 @@
       <Project>{d6b73174-af36-f26e-e9fa-5aca4063c4fc}</Project>
       <Name>Oculus.Interaction.InterfaceSupport</Name>
     </ProjectReference>
-    <ProjectReference Include="Oculus.Interaction.OVR.Samples.csproj">
-      <Project>{f49c81d5-b101-0f41-c876-3d0f68e0184c}</Project>
-      <Name>Oculus.Interaction.OVR.Samples</Name>
-    </ProjectReference>
     <ProjectReference Include="Facebook.Wit.Dictation.Editor.csproj">
       <Project>{0727e53f-9a51-fbdd-23f9-730c0f55e194}</Project>
       <Name>Facebook.Wit.Dictation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Oculus.Interaction.OVR.Samples.csproj">
+      <Project>{f49c81d5-b101-0f41-c876-3d0f68e0184c}</Project>
+      <Name>Oculus.Interaction.OVR.Samples</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.BuiltInTimer.csproj">
       <Project>{62e40e79-171d-881d-ef55-b249f28864c8}</Project>
@@ -1072,13 +1072,13 @@
       <Project>{2a21f096-7f2f-5eb3-86ec-fc86fecbe58c}</Project>
       <Name>Unity.RenderPipeline.Universal.ShaderLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="VoiceSDK.Editor.csproj">
-      <Project>{fd4d8dff-df87-e340-fcf3-94a4b047ccf6}</Project>
-      <Name>VoiceSDK.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.ShapesConduit.csproj">
       <Project>{153bd361-ef73-b98d-fcbf-7439aed470f7}</Project>
       <Name>Meta.Voice.Samples.ShapesConduit</Name>
+    </ProjectReference>
+    <ProjectReference Include="VoiceSDK.Editor.csproj">
+      <Project>{fd4d8dff-df87-e340-fcf3-94a4b047ccf6}</Project>
+      <Name>VoiceSDK.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Oculus.VR.Editor.csproj">
       <Project>{66b8f078-52c7-4ddd-6c90-3ba0b77151a9}</Project>
