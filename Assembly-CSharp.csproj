@@ -136,6 +136,7 @@
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\SetMeshBarycentricCoordinates.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandler.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Firebase\SampleUI.cs" />
+     <Compile Include="Assets\CoverTerrain.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportAimHandlerLaser.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\LocomotionTeleport.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Scripts\ControllerBoxController.cs" />
