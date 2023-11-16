@@ -1,26 +1,32 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-public class EnemyBehevior : MonoBehaviour
+
+public abstract class EnemyBehavior : MonoBehaviour
 {
     public Transform target; // Reference to the player
-    private NavMeshAgent agent;
+    protected NavMeshAgent agent;
+    protected int health; // Health points of the enemy
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        if (target == null)
-        {
-            Debug.LogError("Target (Player) not assigned in inspector!");
-        }
+        Initialize();
     }
 
-    void Update()
+    protected virtual void Initialize()
     {
-        if (target != null)
+        // This method can be overridden in derived classes for additional initialization
+    }
+
+    protected void MoveToTarget(Transform targetToGo)
+    {
+        if (targetToGo != null)
         {
-            agent.SetDestination(target.position);
+            agent.SetDestination(targetToGo.position);
+        }
+        else
+        {
+            Debug.LogError("Target is null in MoveToTarget method.");
         }
     }
 }
