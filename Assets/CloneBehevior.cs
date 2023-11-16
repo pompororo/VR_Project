@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public class CloneBehavior : EnemyBehavior
 {
+    private Transform formationCenter;
     public Transform target; 
 
     void Start()
@@ -21,9 +22,7 @@ public class CloneBehavior : EnemyBehavior
     // Update is called once per frame
     void Update()
     {
-        if (target != null)
-        {
-            switch (currentState)
+        switch (currentState)
             {
                 case EnemyState.Walk:
                     HandleWalkState();
@@ -37,11 +36,13 @@ public class CloneBehavior : EnemyBehavior
                 case EnemyState.TakeCover:
                     HandleTakeCoverState();
                     break;
+                case EnemyState.Formations:
+                    HandleFormationsState();
+                    break;
                 default:
 
                     break;
             }
-        }
     }
 
     void HandleWalkState()
@@ -56,6 +57,13 @@ public class CloneBehavior : EnemyBehavior
     void HandleRunState()
     {
         
+    }
+    void HandleFormationsState()
+    {
+        if (formationCenter != null)
+        {
+            MoveToTarget(formationCenter);
+        }
     }
     void HandleTakeCoverState()
     {
@@ -72,4 +80,14 @@ public class CloneBehavior : EnemyBehavior
         }
     }
     
+    public void SetFormationCenter(Transform center)
+    {
+        formationCenter = center;
+    }
+
+    public void SetFomation()
+    {
+        SetState(EnemyState.Formations);
+    }
+
 }

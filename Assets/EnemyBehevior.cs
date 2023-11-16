@@ -56,6 +56,7 @@ public abstract class EnemyBehavior : MonoBehaviour
         Walk,
         Fire,
         Run,
-        TakeCover
+        TakeCover,
+        Formations 
     }
 }
