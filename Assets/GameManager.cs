@@ -23,8 +23,18 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform enemyParent;
     [SerializeField] private GameObject enemyPrefab;
     public int sizeSpawn;
-
+    public int enemyToSpawnCount;
     
+    private float _elapsedTime = 0f;
+    public float waveDuration = 60f;
+
+    private void SpawnGroupOfEnemy(int Count)
+    {
+        for(int i = 0; i < Count;i++)
+        {
+            RandomSpawnPoint(enemyPrefab);
+        }
+    }
 
     private void RandomSpawnPoint(GameObject enemy)
     {
