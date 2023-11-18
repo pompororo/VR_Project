@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CloneBehavior : EnemyBehavior
+public class ECloneBehavior : EnemyBehavior
 {
     private Transform formationCenter;
     public Transform target;
@@ -18,8 +18,8 @@ public class CloneBehavior : EnemyBehavior
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        randomstopdistaceTarget = Random.Range(5, 12);
-        shootCooldown = Random.Range(0.9f, 2);
+        randomstopdistaceTarget = Random.Range(8, 15);
+        shootCooldown = Random.Range(0.1f, 1);
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         target = player.transform;
         
@@ -58,8 +58,7 @@ public class CloneBehavior : EnemyBehavior
         if (distanceToTarget > randomstopdistaceTarget)
         {
             agent.isStopped = false;
-            MoveToTarget(target);
-            agent.stoppingDistance = randomstopdistaceTarget;
+            HandleTakeCoverState();
             HandleFireState();
         }
         else if (distanceToTarget <= randomstopdistaceTarget - 1)
@@ -93,7 +92,7 @@ public class CloneBehavior : EnemyBehavior
     {
         StartCoroutine(ActivateAndDeactivate());
         GameObject bullet = Instantiate(bulletPrefab, bulletPoint.position, bulletPoint.rotation);
-        shootCooldown = Random.Range(0.9f, 2);
+        shootCooldown = Random.Range(0.1f, 0.5f);
         Destroy(bullet, 5f);
     }
     void HandleRunState()
@@ -119,7 +118,7 @@ public class CloneBehavior : EnemyBehavior
         else
         {
             MoveToTarget(target);
-            agent.stoppingDistance = 5;
+            agent.stoppingDistance = randomstopdistaceTarget;
             HandleFireState();
         }
     }

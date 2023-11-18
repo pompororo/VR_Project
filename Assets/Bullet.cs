@@ -8,4 +8,14 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        // Check if the colliding object has the tag "Player"
+        if (other.CompareTag("Player"))
+        {
+            // Destroy the bullet
+            Destroy(gameObject);
+        }
+    }
 }
