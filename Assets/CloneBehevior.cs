@@ -11,7 +11,7 @@ public class CloneBehavior : EnemyBehavior
     
     public Transform bulletPoint;
     public GameObject bulletPrefab;
-    public float shootCooldown = 1f;
+    private float shootCooldown;
     private float timer;
     private float randomstopdistaceTarget;
 
@@ -19,6 +19,7 @@ public class CloneBehavior : EnemyBehavior
     {
         agent = GetComponent<NavMeshAgent>();
         randomstopdistaceTarget = Random.Range(5, 12);
+        shootCooldown = Random.Range(0.9f, 2);
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         target = player.transform;
         
@@ -91,6 +92,7 @@ public class CloneBehavior : EnemyBehavior
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletPoint.position, bulletPoint.rotation);
+        shootCooldown = Random.Range(0.9f, 2);
         Destroy(bullet, 5f);
     }
     void HandleRunState()
@@ -111,11 +113,13 @@ public class CloneBehavior : EnemyBehavior
         {
             MoveToTarget(nearestCover);
             agent.stoppingDistance = 0;
+            HandleFireState();
         }
         else
         {
             MoveToTarget(target);
             agent.stoppingDistance = 5;
+            HandleFireState();
         }
     }
     
