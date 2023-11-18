@@ -175,6 +175,7 @@
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportInputHandlerHMD.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\FingerTipPokeToolView.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\CharacterCameraConstraint.cs" />
+     <Compile Include="Assets\ElectricArc.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\SpatialAnchorLoader.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\SelectivePassthroughExperience.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\SimpleResizer\SimpleResizable.cs" />
@@ -290,6 +291,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Prefabs\OutlineItems" />
      <Folder Include="Assets\Oculus\Voice\Features\Hub" />
+     <Folder Include="Assets\ErbGameArt" />
      <Folder Include="Assets\TextMesh Pro\Resources" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature\Trees" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\Dictation\Scripts" />
@@ -315,6 +317,7 @@
      <Folder Include="Assets\Oculus\Voice\Lib\PlatformCompatibility\Plugins" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Materials" />
      <Folder Include="Assets\TextMesh Pro" />
+     <Folder Include="Assets\ErbGameArt\Materials" />
      <Folder Include="Assets\Oculus\Voice\Samples\BuiltInTimer" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SharedAssets\Materials" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Models" />
@@ -394,6 +397,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video\Materials" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Samples\Dictation\Scenes" />
      <None Include="Assets\Oculus\Voice\Lib\Wit.ai\Resources\witai_texts_en-us.json" />
+     <Folder Include="Assets\ErbGameArt\Textures" />
      <Folder Include="Assets\GI477_Interaction" />
      <Folder Include="Assets\Oculus\Voice\Features\Hub\Scripts" />
      <Folder Include="Assets\Oculus\Voice\Lib\PlatformCompatibility\Scripts" />
@@ -514,6 +518,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Prefabs" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Firebase" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation" />
+     <Folder Include="Assets\ErbGameArt\Prefabs" />
      <Folder Include="Assets\Oculus\Voice\Samples\LiveUnderstanding\Materials" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
      <Folder Include="Assets\Oculus\Voice\Samples\LiveUnderstanding" />
