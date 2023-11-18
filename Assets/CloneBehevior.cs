@@ -7,16 +7,22 @@ using UnityEngine.AI;
 public class CloneBehavior : EnemyBehavior
 {
     private Transform formationCenter;
-    public Transform target; 
+    public Transform target;
+    
+    public Transform bulletPoint;
+    public GameObject bulletPrefab;
+    public float shootCooldown = 1f;
+    private float timer;
+    private float randomstopdistaceTarget;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-
+        randomstopdistaceTarget = Random.Range(5, 12);
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         target = player.transform;
         
-        SetState(EnemyState.TakeCover);
+        SetState(EnemyState.Walk);
     }
 
     // Update is called once per frame
@@ -47,12 +53,45 @@ public class CloneBehavior : EnemyBehavior
 
     void HandleWalkState()
     {
-        MoveToTarget(target);
-        agent.stoppingDistance = 5;
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
+        if (distanceToTarget > randomstopdistaceTarget)
+        {
+            agent.isStopped = false;
+            MoveToTarget(target);
+            agent.stoppingDistance = randomstopdistaceTarget;
+            HandleFireState();
+        }
+        else if (distanceToTarget <= randomstopdistaceTarget - 1)
+        {
+            Vector3 retreatDirection = transform.position - target.position;
+            agent.Move(retreatDirection.normalized * agent.speed * Time.deltaTime);
+            HandleFireState();
+        }
+        else
+        {
+            agent.isStopped = true;
+            HandleFireState();
+        }
     }
+
     void HandleFireState()
     {
-        
+    
+        transform.LookAt(target.position);
+
+        timer += Time.deltaTime;
+
+        if (timer >= shootCooldown)
+        {
+            Shoot();
+            timer = 0f;
+        }
+    }
+
+    void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletPrefab, bulletPoint.position, bulletPoint.rotation);
+        Destroy(bullet, 5f);
     }
     void HandleRunState()
     {

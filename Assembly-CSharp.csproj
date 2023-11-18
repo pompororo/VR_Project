@@ -127,6 +127,7 @@
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorSpawner.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\Anchor.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\PinchStateModule.cs" />
+     <Compile Include="Assets\Bullet.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorSession.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportDestination.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\PassthroughBrush.cs" />
@@ -382,6 +383,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Models" />
      <Folder Include="Assets\XR\Settings" />
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples\ShapesConduit" />
+     <Folder Include="Assets\Prefab" />
      <Folder Include="Assets\Oculus\Voice\Features\Telemetry\Scripts" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
      <Folder Include="Assets\Oculus\Voice\Features\VoiceHub\Hub\Pages\WhatsNew\Images" />
@@ -433,6 +435,7 @@
      <Folder Include="Assets\polyperfect\Poly Halloween\- Materials\Nature" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Meshes\Nature" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Resources" />
+     <Folder Include="Assets\Model\blaster" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature" />
