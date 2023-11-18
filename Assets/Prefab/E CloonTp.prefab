@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3013514467043032922}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bulletpoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 2121773034236930988}
   - component: {fileID: 6885049430444866701}
   - component: {fileID: 8628419873147594744}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: E CloonTp
   m_TagString: Ai
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   - component: {fileID: 8426844616201085012}
   - component: {fileID: 926530877518005426}
   - component: {fileID: 8514022503744957003}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: E10Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 4358908799673102287}
   - component: {fileID: 1544255615632843149}
   - component: {fileID: 2864075105960728205}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -422,7 +422,7 @@ GameObject:
   - component: {fileID: 610216242909932295}
   - component: {fileID: 3857096877695272519}
   - component: {fileID: 2083173427798389371}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: E10Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6641183440347666621}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Baster
   m_TagString: Untagged
   m_Icon: {fileID: 0}

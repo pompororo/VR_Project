@@ -46,6 +46,8 @@ public abstract class EnemyBehavior : MonoBehaviour
          
         }
     }
+    
+    
 
     protected void TakeDamage(int damage)
     {

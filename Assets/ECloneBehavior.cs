@@ -55,23 +55,32 @@ public class ECloneBehavior : EnemyBehavior
     void HandleWalkState()
     {
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
-        if (distanceToTarget > randomstopdistaceTarget)
+        if (IsAnotherAIBlocking())
         {
-            agent.isStopped = false;
-            HandleTakeCoverState();
-            HandleFireState();
-        }
-        else if (distanceToTarget <= randomstopdistaceTarget - 1)
-        {
-            Vector3 retreatDirection = transform.position - target.position;
-            agent.Move(retreatDirection.normalized * agent.speed * Time.deltaTime);
-            HandleFireState();
+            MoveToSide();
         }
         else
         {
-            agent.isStopped = true;
-            HandleFireState();
+            if (distanceToTarget > randomstopdistaceTarget)
+            {
+                agent.isStopped = false;
+                HandleTakeCoverState();
+                HandleFireState();
+            }
+            else if (distanceToTarget <= randomstopdistaceTarget - 1)
+            {
+                Vector3 retreatDirection = transform.position - target.position;
+                agent.Move(retreatDirection.normalized * agent.speed * Time.deltaTime);
+                HandleFireState();
+            }
+            else
+            {
+                agent.isStopped = true;
+                HandleFireState();
+            }
         }
+
+    
     }
 
     void HandleFireState()
@@ -123,6 +132,59 @@ public class ECloneBehavior : EnemyBehavior
         }
     }
     
+    bool IsAnotherAIBlocking()
+    {
+        // Cast a ray from the AI towards the target
+        Ray ray = new Ray(transform.position, target.position - transform.position);
+        RaycastHit hit;
+
+        // Adjust the layer mask as needed to include only your AI layer
+        int layerMask = 1 << LayerMask.NameToLayer("Ai");
+
+        // Check if another AI is blocking the line of sight
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, layerMask))
+        {
+            if (hit.collider.CompareTag("Ai"))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+    private bool hasMovedToSide = false;
+
+    void MoveToSide()
+    {
+        transform.LookAt(target.position);
+        timer += Time.deltaTime;
+
+        if (timer >= 1.5f)
+        {
+            hasMovedToSide = false;
+            timer = 0f;
+        }
+        if (!hasMovedToSide)
+        {
+            agent.stoppingDistance = 0;
+            agent.isStopped = false;
+
+            // Calculate a random angle for the direction (right or left)
+            float randomAngle = Random.Range(0f, 360f);
+            Quaternion randomRotation = Quaternion.AngleAxis(randomAngle, Vector3.up);
+        
+            // Calculate the side destination based on the random direction
+            Vector3 sideDirection = randomRotation * transform.right;
+            Vector3 sideDestination = transform.position + sideDirection * Random.Range(2f, 20f);
+
+            // Set the destination for the agent
+            agent.SetDestination(sideDestination);
+
+            // Set the flag to true to indicate that the AI has already moved to the side
+            hasMovedToSide = true;
+        }
+    }
+
     public void SetFormationCenter(Transform center)
     {
         formationCenter = center;
