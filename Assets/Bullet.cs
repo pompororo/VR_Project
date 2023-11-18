@@ -6,16 +6,34 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
+        MoveBullet();
+    }
+
+    void MoveBullet()
+    {
         transform.Translate(Vector3.up * speed * Time.deltaTime);
     }
 
     void OnTriggerEnter(Collider other)
     {
-        // Check if the colliding object has the tag "Player"
         if (other.CompareTag("Player"))
         {
-            // Destroy the bullet
             Destroy(gameObject);
         }
+        else if (other.CompareTag("BladeSaber"))
+        {
+            // Reflect the bullet in the opposite direction
+            ReflectBullet();
+        }
+    }
+
+    void ReflectBullet()
+    {
+        // Reverse the bullet's direction
+        speed = -speed;
+        float randomRotationY = Random.Range(-50f, 50f);
+
+        transform.rotation = Quaternion.Euler(90f, randomRotationY, 0f);
+        
     }
 }

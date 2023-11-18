@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Cover
   - Bullet
+  - BladeSaber
   layers:
   - Default
   - TransparentFX
