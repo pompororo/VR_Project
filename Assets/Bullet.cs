@@ -20,6 +20,10 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.CompareTag("Ai"))
+        {
+            Destroy(gameObject);
+        }
         else if (other.CompareTag("BladeSaber"))
         {
             // Reflect the bullet in the opposite direction
