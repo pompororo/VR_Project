@@ -1216,6 +1216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 449042357}
   - component: {fileID: 449042356}
+  - component: {fileID: 449042358}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1251,6 +1252,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &449042358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449042355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f42f45e5441164cb403f3f2bce69bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint0: {fileID: 0}
+  spawnPoint1: {fileID: 0}
+  enemyParent: {fileID: 0}
+  enemyPrefab: {fileID: 0}
+  sizeSpawn: 0
+  enemyToSpawnCount: 0
+  waveDuration: 60
 --- !u!4 &489218534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a,
@@ -2564,7 +2584,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1185318075}
   m_VisualEffect: {fileID: 1185318078}
 --- !u!73398921 &1185318077
 VFXRenderer:
@@ -3107,7 +3128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1616985546}
   m_VisualEffect: {fileID: 1616985549}
 --- !u!73398921 &1616985548
 VFXRenderer:
@@ -3493,7 +3515,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1801699706}
   m_VisualEffect: {fileID: 1801699709}
 --- !u!73398921 &1801699708
 VFXRenderer:
@@ -3859,7 +3882,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1974462862}
   m_VisualEffect: {fileID: 1974462865}
 --- !u!73398921 &1974462864
 VFXRenderer:

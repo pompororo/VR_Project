@@ -6,11 +6,11 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
 
-    public static AffectFieldSkill currentFieldState;
-    public static float slowTimeDownFactor = 0.5f;
+    public static AffectFieldSkill currentFieldState = AffectFieldSkill.Default;
+    private static float slowTimeDownFactor = 0.05f;
     
     // Start is called before the first frame update
-    void Start()
+    void Awoke()
     {
         if (instance != null && instance != this)
         {
@@ -28,13 +28,15 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(currentFieldState);
         #region ลบตอนใส่จริงมันต้องอยู่ที่ player
 
-        if ((OVRInput.GetDown(OVRInput.Button.One) || Input.GetKey(KeyCode.Tab)) && GameManager.currentFieldState != AffectFieldSkill.SlowTime)
+        if ( Input.GetKeyDown(KeyCode.Tab) && GameManager.currentFieldState != AffectFieldSkill.SlowTime)
         {
+            Debug.Log("tab is press");
             GameManager.ActiveSlowTime();
         }
-        else
+        else if (Input.GetKeyDown(KeyCode.Tab) && GameManager.currentFieldState == AffectFieldSkill.SlowTime)
         {
             GameManager.DefaultFieldState();
         }
@@ -54,6 +56,7 @@ public class GameManager : MonoBehaviour
      {
          currentFieldState = AffectFieldSkill.SlowTime;
          Time.timeScale = slowTimeDownFactor;
+         Time.fixedDeltaTime = Time.timeScale * 0.2f;
      }
 
      public static void DefaultFieldState()
