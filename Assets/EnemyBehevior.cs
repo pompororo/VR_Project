@@ -70,6 +70,7 @@ public abstract class EnemyBehavior : MonoBehaviour
             TakeDamage(80);
         }
     }
+
     protected void Die()
     {
         // Implement your logic for enemy death here

@@ -35,6 +35,8 @@ public class PlayerControllerTest : MonoBehaviour
         // Remove null references from the list
         Enemytargets.RemoveAll(item => item == null);
 
+        
+        //forcelighting
         if (mainCamera != null && Input.GetMouseButtonDown(0))
         {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);

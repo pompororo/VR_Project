@@ -106,6 +106,7 @@
      <Compile Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\Ui\UiBoolInspector.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\BouncingBallMgr.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\CustomHands\Scripts\HandPose.cs" />
+     <Compile Include="Assets\GameManager\GameManager.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\SimpleResizer\SimpleResizer.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Scripts\AnchorUIManager.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Scripts\VectorUtil.cs" />
@@ -113,7 +114,6 @@
      <Compile Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts\LaserPointer.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\Ui\UiAxis1dInspector.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools\InteractableTool.cs" />
-     <Compile Include="Assets\GameManager.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\MyCustomSceneModelLoader.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts\FlashlightController.cs" />
      <Compile Include="Assets\Oculus\SampleFramework\Core\Locomotion\Scripts\TeleportSupport.cs" />
@@ -238,8 +238,10 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Prefabs\StylusTip" />
      <Folder Include="Assets\Oculus\Voice\Features\VoiceHub\Scripts" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthrough.shader" />
+     <Folder Include="Assets\SceneAsset\RoomCeiling" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Particles" />
      <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Textures" />
+     <Folder Include="Assets\SceneAsset\Door" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video\Scripts" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Audio" />
      <Folder Include="Assets\Oculus\Voice\Samples\LightTraits\Materials" />
@@ -297,7 +299,9 @@
      <Folder Include="Assets\TextMesh Pro\Resources" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature\Trees" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\Dictation\Scripts" />
+     <Folder Include="Assets\SceneAsset\WallGateway" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Textures" />
+     <Folder Include="Assets\SceneAsset" />
      <Folder Include="Assets\VFX" />
      <Folder Include="Assets\Model\Texture\Trooper\UnderSuite" />
      <Folder Include="Assets\Oculus\Voice\Features\VoiceHub\Hub\Pages\WhatsNew" />
@@ -316,6 +320,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders" />
      <Folder Include="Assets\Oculus\Voice\Scripts" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <Folder Include="Assets\SceneAsset\RoomFloor" />
      <Folder Include="Assets\XR\Loaders" />
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples\LiveUnderstanding" />
      <Folder Include="Assets\Oculus\Voice\Lib\PlatformCompatibility\Plugins" />
@@ -368,6 +373,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Materials" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\PhysicsMaterials" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Samples" />
+     <Folder Include="Assets\GameManager" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Prefabs" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <Folder Include="Assets\Model" />
@@ -386,6 +392,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scenes" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts" />
+     <Folder Include="Assets\SceneAsset\FloorGateway" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Gradle" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\CustomHands\Animations" />
@@ -415,6 +422,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample" />
      <Folder Include="Assets\TextMesh Pro\Shaders" />
+     <Folder Include="Assets\SceneAsset\WallRoomDoorFrame" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Textures\ControllerBoxTextures" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Scripts" />
      <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Textures\Explosion" />
@@ -422,6 +430,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools" />
      <Folder Include="Assets\polyperfect" />
+     <Folder Include="Assets\SceneAsset\CeilingGateway" />
      <Folder Include="Assets\TextMesh Pro\Resources\Style Sheets" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Materials\VFX" />
      <Folder Include="Assets\TutorialInfo\Scripts" />
@@ -486,6 +495,7 @@
      <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\java\com" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Mesh" />
+     <Folder Include="Assets\SceneAsset\RoomWall" />
      <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered Opaque.shader" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Prefabs" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Scripts\SimpleResizer" />
@@ -493,6 +503,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Core\Firebase" />
      <Folder Include="Assets\Samples\OpenXR Plugin\1.8.2\Controller\Prefabs" />
      <None Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders\PassthroughShadow.shader" />
+     <Folder Include="Assets\SceneAsset\GatewayDoorFrame" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SharedAssets\Textures" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
@@ -813,7 +824,7 @@
      <HintPath>C:\Program Files\Unity 2022.3.11f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity 2022.3.11f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -1182,202 +1193,202 @@
      <HintPath>C:\Program Files\Unity 2022.3.11f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Management">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualEffectGraph.Runtime">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Runtime">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.MockHMD">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.MockHMD.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.MockHMD.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Animation.Rigging.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Animation.Rigging.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualEffectGraph.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.CoreUtils">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenXR">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.MetaQuestSupport">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.MetaQuestSupport.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Management.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
      </Reference>
      <Reference Include="PPv2URPConverters">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\PPv2URPConverters.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.CoreUtils.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.CoreUtils.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.CoreUtils.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Oculus.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.Oculus.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.MockHMD.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.MockHMD.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.MockHMD.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Sysroot.Linux_x86_64">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VSCode.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.SpatialTracking">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.SpatialTracking">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Animation.Rigging">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InputSystem">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InputSystem.ForUI">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.InputSystem.ForUI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.Oculus">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.Oculus.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenXR.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.SysrootPackage.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.SysrootPackage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation.Updater">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Shaders">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Searcher.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.Searcher.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.AI.Navigation.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>D:\GithubProject\VR\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
