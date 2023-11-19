@@ -8,12 +8,17 @@ public class CloneBehavior : EnemyBehavior
 {
     private Transform formationCenter;
     public Transform target;
-    
+
     public Transform bulletPoint;
     public GameObject bulletPrefab;
     private float shootCooldown;
     private float timer;
     private float randomstopdistaceTarget;
+    
+    private bool isInsideSkillForceL = false;
+    private float damageOverTimeRate = 20f; // Adjust this value as needed
+    private float damageOverTimeInterval = 0.25f; // Adjust this value as needed
+    private float damageOverTimeTimer = 0f;
 
     void Start()
     {
@@ -22,7 +27,7 @@ public class CloneBehavior : EnemyBehavior
         shootCooldown = Random.Range(0.9f, 2);
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         target = player.transform;
-        
+
         SetState(EnemyState.Walk);
     }
 
@@ -30,26 +35,26 @@ public class CloneBehavior : EnemyBehavior
     void Update()
     {
         switch (currentState)
-            {
-                case EnemyState.Walk:
-                    HandleWalkState();
-                    break;
-                case EnemyState.Fire:
-                    HandleFireState();
-                    break;
-                case EnemyState.Run:
-                    HandleRunState();
-                    break;
-                case EnemyState.TakeCover:
-                    HandleTakeCoverState();
-                    break;
-                case EnemyState.Formations:
-                    HandleFormationsState();
-                    break;
-                default:
+        {
+            case EnemyState.Walk:
+                HandleWalkState();
+                break;
+            case EnemyState.Fire:
+                HandleFireState();
+                break;
+            case EnemyState.Run:
+                HandleRunState();
+                break;
+            case EnemyState.TakeCover:
+                HandleTakeCoverState();
+                break;
+            case EnemyState.Formations:
+                HandleFormationsState();
+                break;
+            default:
 
-                    break;
-            }
+                break;
+        }
     }
 
     void HandleWalkState()
@@ -81,7 +86,7 @@ public class CloneBehavior : EnemyBehavior
                 HandleFireState();
             }
         }
-       
+
     }
 
     void HandleFireState()
@@ -132,6 +137,7 @@ public class CloneBehavior : EnemyBehavior
             hasMovedToSide = false;
             timer = 0f;
         }
+
         if (!hasMovedToSide)
         {
             agent.stoppingDistance = 0;
@@ -140,7 +146,7 @@ public class CloneBehavior : EnemyBehavior
             // Calculate a random angle for the direction (right or left)
             float randomAngle = Random.Range(0f, 360f);
             Quaternion randomRotation = Quaternion.AngleAxis(randomAngle, Vector3.up);
-        
+
             // Calculate the side destination based on the random direction
             Vector3 sideDirection = randomRotation * transform.right;
             Vector3 sideDestination = transform.position + sideDirection * Random.Range(2f, 20f);
@@ -162,10 +168,12 @@ public class CloneBehavior : EnemyBehavior
         shootCooldown = Random.Range(0.9f, 2);
         Destroy(bullet, 5f);
     }
+
     void HandleRunState()
     {
-        
+
     }
+
     void HandleFormationsState()
     {
         if (formationCenter != null)
@@ -173,6 +181,7 @@ public class CloneBehavior : EnemyBehavior
             MoveToTarget(formationCenter);
         }
     }
+
     void HandleTakeCoverState()
     {
         Transform nearestCover = FindNearestCover("Cover");
@@ -189,7 +198,7 @@ public class CloneBehavior : EnemyBehavior
             HandleFireState();
         }
     }
-    
+
     public void SetFormationCenter(Transform center)
     {
         formationCenter = center;
@@ -199,7 +208,9 @@ public class CloneBehavior : EnemyBehavior
     {
         SetState(EnemyState.Formations);
     }
+
     public GameObject FlashMuzzle;
+
     IEnumerator ActivateAndDeactivate()
     {
         // Activate the GameObject
@@ -211,6 +222,36 @@ public class CloneBehavior : EnemyBehavior
         // Deactivate the GameObject
         FlashMuzzle.SetActive(false);
     }
+    void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("SkillForceL"))
+        {
+            isInsideSkillForceL = true;
 
+            // Apply damage over time
+            damageOverTimeTimer += Time.deltaTime;
+            if (damageOverTimeTimer >= damageOverTimeInterval)
+            {
+                TakeDamageOverTime();
+                damageOverTimeTimer = 0f;
+            }
+        }
+    }
 
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("SkillForceL"))
+        {
+            isInsideSkillForceL = false;
+            damageOverTimeTimer = 0f; // Reset the timer when exiting the collider
+        }
+    }
+
+    void TakeDamageOverTime()
+    {
+        // Adjust the damage value as needed
+        TakeDamage((int)(damageOverTimeRate * damageOverTimeInterval));
+    }
+
+  
 }

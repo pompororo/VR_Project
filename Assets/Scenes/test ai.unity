@@ -3749,7 +3749,7 @@ GameObject:
   - component: {fileID: 1638388072}
   - component: {fileID: 1638388073}
   m_Layer: 0
-  m_Name: skill target
+  m_Name: SkillForceL
   m_TagString: SkillForceL
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
