@@ -15,26 +15,32 @@ public class Player : MonoBehaviour
     
     
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     private void StartForcePull()
     {
+        /*
+         *
+         * Raycast ต้องยิงมาจากมือ
+         * Force จะต้องดึง(กด)แค่ครั้งเดียวดึงมาที่มือของเรา (จำของแล้วดึงเรื่อยๆ? who know อย่าหาทำใน start ครั้งเดียว)
+         * Hightlight lightsaber ด้วย
+         * 
+         */
+        
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.Log("Hit object: " + hit.collider.gameObject.name);
+            //Debug.Log("Hit object: " + hit.collider.gameObject.name);
             
-            Vector3 direction = (transform.position - hit.point).normalized;
             if (hit.collider.CompareTag("HandleLightsaber"))
             {
-                Debug.Log("Hit lightsaber");
+                Transform parenthitTransform = hit.collider.transform.parent;
+                Debug.Log("Hit lightsaber start pulling");
                 isPulling = true;
-                Rigidbody pulledObject = hit.collider.GetComponent<Rigidbody>();
+                Rigidbody pulledObject = parenthitTransform.GetComponent<Rigidbody>();
+                
+                Vector3 direction = transform.position - parenthitTransform.position;
                 if (pulledObject != null)
                 {
                     pulledObject.velocity = direction * pullForce * Time.deltaTime;
@@ -55,6 +61,7 @@ public class Player : MonoBehaviour
             GameManager.DefaultFieldState();
         }
         
+        //อย่าหาทำพอเรียกซ้ำแล้วกลายเป็นช้าเลย
         if (Input.GetMouseButtonDown(0))
         {
             StartForcePull();
