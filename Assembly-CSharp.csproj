@@ -229,6 +229,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scripts" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders" />
      <Folder Include="Assets\Oculus\Voice\Samples\LightTraits" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Prefabs" />
      <Folder Include="Assets\TextMesh Pro\Resources\Sprite Assets" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Prefabs\GlobalMesh" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\DebugUI\Scripts" />
@@ -238,6 +239,7 @@
      <Folder Include="Assets\Oculus\Voice\Features\VoiceHub\Scripts" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\SelectivePassthrough.shader" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Particles" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Textures" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video\Scripts" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Audio" />
      <Folder Include="Assets\Oculus\Voice\Samples\LightTraits\Materials" />
@@ -262,6 +264,7 @@
      <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\GradientSkybox.shader" />
      <Folder Include="Assets\Oculus\Voice\Samples\TTSVoices\Prefabs" />
      <Folder Include="Assets\Oculus\Voice\Samples\TTSVoices\Materials" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Shaders\Subgraphs" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials\PassthroughLine.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Prefabs\FurniturePrefabs" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\CustomHands\Scripts" />
@@ -296,6 +299,7 @@
      <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature\Trees" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\Dictation\Scripts" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Textures" />
+     <Folder Include="Assets\VFX" />
      <Folder Include="Assets\Model\Texture\Trooper\UnderSuite" />
      <Folder Include="Assets\Oculus\Voice\Features\VoiceHub\Hub\Pages\WhatsNew" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\StylusTip" />
@@ -309,6 +313,7 @@
      <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Halloween" />
      <None Include="Assets\Oculus\SampleFramework\Core\Locomotion\Materials\ColumnGlow.shader" />
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Subgraphs\Operators\Tween" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\CustomHands\Shaders" />
      <Folder Include="Assets\Oculus\Voice\Scripts" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -333,6 +338,7 @@
      <Folder Include="Assets\Oculus\Voice\Lib\PlatformCompatibility" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\AppDeeplink" />
      <Folder Include="Assets\Material" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\VFX" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor\Meshs" />
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples\LightTraits" />
      <Folder Include="Assets\GI477_Interaction\Scenes" />
@@ -352,6 +358,7 @@
      <None Include="Assets\Oculus\SampleFramework\Core\DebugUI\Fonts\Montserrat\OFL.txt" />
      <Folder Include="Assets\Oculus\Voice\Resources" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SceneManager\Shaders" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Subgraphs" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro\Scripts\Haptics" />
      <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Default Correct.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\TouchControllers" />
@@ -369,11 +376,13 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SharedAssets\Skyboxes" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Textures" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Shaders\ParticleOutput" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Scripts" />
      <Folder Include="Assets\XR" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\Dictation" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Textures\Generic" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\CustomHands" />
      <Folder Include="Assets\Oculus\Interaction\OVRIntegration" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Scenes" />
@@ -411,6 +420,7 @@
      <Folder Include="Assets\TextMesh Pro\Shaders" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Textures\ControllerBoxTextures" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Scripts" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Textures\Explosion" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Models" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Scripts\Tools" />
@@ -424,6 +434,7 @@
      <Folder Include="Assets\Oculus\Voice\Samples\ShapesConduit\Materials" />
      <Folder Include="Assets\TutorialInfo\Icons" />
      <Folder Include="Assets\Samples\OpenXR Plugin\1.8.2\Controller\Models" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Textures\Smoke" />
      <Folder Include="Assets\HandGrabInteractableDataCollection" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Features" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\HandsInteraction\Materials" />
@@ -444,6 +455,7 @@
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Resources" />
      <Folder Include="Assets\Model\blaster" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Shaders" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Audio" />
@@ -465,13 +477,16 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SharedAssets\Skyboxes\Sky_01" />
      <Folder Include="Assets\Oculus\Voice" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\TouchControllers\Animations" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Subgraphs\Operators" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\OVROverlay" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Subgraphs\Blocks" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\TouchPro" />
      <Folder Include="Assets\Oculus\Voice\Samples\BuiltInTimer\Audio" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Shaders\OculusSampleTrainSmokeShader.shader" />
      <Folder Include="Assets\Oculus\Voice\Lib\Wit.ai\Features\TTS" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SceneManager" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video\Plugins\Android\java\com" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\DistanceGrab\Mesh" />
      <None Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Shaders\UI Prerendered Opaque.shader" />
@@ -484,6 +499,7 @@
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Materials" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SharedAssets\Textures" />
      <None Include="Assets\Oculus\SampleFramework\Usage\Locomotion\Shaders\TriPlanarWorld.shader" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Textures\FlowMaps" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SpatialAnchor" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Demo Scenes\Terrain" />
      <Folder Include="Assets\Oculus\Interaction" />
@@ -510,12 +526,14 @@
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Samples\Dictation\Materials" />
      <Folder Include="Assets\Oculus\Voice\Samples\Shapes\Materials" />
      <Folder Include="Assets\TextMesh Pro\Documentation" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\StartScene" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Passthrough\Textures" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\DebugUI\Textures" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation\Plugins" />
      <Folder Include="Assets\Oculus\Voice\Features\VoiceHub\Hub" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Prefabs" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Textures\Fire" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\Firebase" />
      <Folder Include="Assets\Oculus\Voice\Features\Dictation" />
      <Folder Include="Assets\ErbGameArt\Prefabs" />
@@ -534,10 +552,12 @@
      <Folder Include="Assets\Oculus\Voice\Documentation\Samples\Shapes" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\StartScene\Scripts" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\SharedAssets\Skyboxes\Sky_02" />
+     <Folder Include="Assets\Samples\Visual Effect Graph" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne.json" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\HandsTrainExample\Models" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\CustomHands" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Prefabs\Nature\Rocks" />
+     <Folder Include="Assets\Samples\Visual Effect Graph\14.0.9\VisualEffectGraph Additions\Shaders\MeshOutput" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\Video" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas" />
@@ -1201,14 +1221,14 @@
      <Reference Include="Unity.RenderPipelines.Core.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualEffectGraph.Editor">
+     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.VisualEffectGraph.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualEffectGraph.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.XR.CoreUtils">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.XR.CoreUtils.dll</HintPath>
@@ -1237,9 +1257,6 @@
      <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VSCode.Editor">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
      </Reference>
@@ -1261,8 +1278,8 @@
      <Reference Include="Unity.Sysroot.Linux_x86_64">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Sysroot.Linux_x86_64.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Animation.Rigging">
-     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
+     <Reference Include="Unity.VSCode.Editor">
+     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.RenderPipelines.Universal.Runtime">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
@@ -1308,6 +1325,9 @@
      </Reference>
      <Reference Include="UnityEditor.XR.LegacyInputHelpers">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Animation.Rigging">
+     <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.Animation.Rigging.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
      <HintPath>F:\bobtest\1640702815 phiraphon\VR_Project\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
