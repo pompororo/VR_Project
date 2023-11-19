@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - BladeSaber
   - Ai
+  - SkillForceL
   layers:
   - Default
   - TransparentFX
