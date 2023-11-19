@@ -4,17 +4,64 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager instance;
+
+    public static AffectFieldSkill currentFieldState;
+    public static float slowTimeDownFactor = 0.5f;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (instance != null && instance != this)
+        {
+            // If an instance already exists and it's not this one, destroy this GameManager
+            Destroy(gameObject);
+        }
+        else
+        {
+            // Set the singleton instance to this instance if it's the first one
+            instance = this;
+            DontDestroyOnLoad(gameObject); // Ensure it persists through scene changes
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        #region ลบตอนใส่จริงมันต้องอยู่ที่ player
+
+        if ((OVRInput.GetDown(OVRInput.Button.One) || Input.GetKey(KeyCode.Tab)) && GameManager.currentFieldState != AffectFieldSkill.SlowTime)
+        {
+            GameManager.ActiveSlowTime();
+        }
+        else
+        {
+            GameManager.DefaultFieldState();
+        }
+
+        #endregion
         
+        switch (currentFieldState)
+        {
+            case AffectFieldSkill.SlowTime:
+                break;
+        }
     }
+
+    #region AffectFieldSkill
+    
+     public static void ActiveSlowTime()
+     {
+         currentFieldState = AffectFieldSkill.SlowTime;
+         Time.timeScale = slowTimeDownFactor;
+     }
+
+     public static void DefaultFieldState()
+     {
+         currentFieldState = AffectFieldSkill.Default;
+         Time.timeScale = 1;
+     }
+    #endregion
 
     #region SpawnWave
 
@@ -61,4 +108,12 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
+}
+
+public enum AffectFieldSkill
+{
+    Default,
+    SlowTime,
+    Pause,
+    ForceLighting
 }
