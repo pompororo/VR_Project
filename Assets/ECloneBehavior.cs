@@ -14,6 +14,11 @@ public class ECloneBehavior : EnemyBehavior
     private float shootCooldown;
     private float timer;
     private float randomstopdistaceTarget;
+    
+    private bool isInsideSkillForceL = false;
+    private float damageOverTimeRate = 55f; // Adjust this value as needed
+    private float damageOverTimeInterval = 0.25f; // Adjust this value as needed
+    private float damageOverTimeTimer = 0f;
 
     void Start()
     {
@@ -206,5 +211,34 @@ public class ECloneBehavior : EnemyBehavior
         // Deactivate the GameObject
         FlashMuzzle.SetActive(false);
     }
+    void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("SkillForceL"))
+        {
+            isInsideSkillForceL = true;
 
+            // Apply damage over time
+            damageOverTimeTimer += Time.deltaTime;
+            if (damageOverTimeTimer >= damageOverTimeInterval)
+            {
+                TakeDamageOverTime();
+                damageOverTimeTimer = 0f;
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("SkillForceL"))
+        {
+            isInsideSkillForceL = false;
+            damageOverTimeTimer = 0f; // Reset the timer when exiting the collider
+        }
+    }
+
+    void TakeDamageOverTime()
+    {
+        // Adjust the damage value as needed
+        TakeDamage((int)(damageOverTimeRate * damageOverTimeInterval));
+    }
 }

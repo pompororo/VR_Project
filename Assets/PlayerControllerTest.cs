@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,11 +10,15 @@ public class PlayerControllerTest : MonoBehaviour
     private Camera mainCamera;
     public GameObject skillobject;
 
+    public bool isSkillActive ;
     public GameObject EnemytargetTrasforms;
     public List<GameObject> Enemytargets;
 
+    public float duration = 5f; // Set the duration in seconds
+    private float timer;
     void Start()
     {
+        isSkillActive  = false;
         mainCamera = Camera.main;
         Enemytargets = new List<GameObject>();
         navMeshAgent = GetComponent<NavMeshAgent>();
@@ -26,18 +31,9 @@ public class PlayerControllerTest : MonoBehaviour
 
     void Update()
     {
+
         // Remove null references from the list
         Enemytargets.RemoveAll(item => item == null);
-
-        if (Enemytargets.Count > 0)
-        {
-            useForceL();
-            EnemytargetTrasforms.transform.position = Enemytargets[0].transform.position;
-        }
-        else
-        {
-            skillobject.SetActive(false);
-        }
 
         if (mainCamera != null && Input.GetMouseButtonDown(0))
         {
@@ -58,11 +54,54 @@ public class PlayerControllerTest : MonoBehaviour
                 navMeshAgent.SetDestination(hit.point);
             }
         }
-    }
+        if (Enemytargets.Count > 0)
+        {
+            if (!isSkillActive)
+            {
+                ActivateSkill();
+            }
+            else
+            {
+                timer += Time.deltaTime;
+                Debug.LogWarning(timer);
+                if (timer >= duration)
+                {
+                    DeactivateSkill();
+                }
+            }
 
-    public void useForceL()
+            if (Enemytargets.Count > 0)
+            {
+                EnemytargetTrasforms.transform.position = Enemytargets[0].transform.position;
+            }
+            else
+            {
+                
+            }
+           
+        }
+        else
+        {
+            DeactivateSkill();
+        }
+
+
+      
+    }
+    private void ActivateSkill()
     {
         skillobject.SetActive(true);
+        isSkillActive = true;
+
     }
+
+    private void DeactivateSkill()
+    {
+        skillobject.SetActive(false);
+        isSkillActive = false;
+        Enemytargets.Clear();
+        timer = 0f;
+    }
+    
     
 }

@@ -16,7 +16,7 @@ public class CloneBehavior : EnemyBehavior
     private float randomstopdistaceTarget;
     
     private bool isInsideSkillForceL = false;
-    private float damageOverTimeRate = 20f; // Adjust this value as needed
+    private float damageOverTimeRate = 55f; // Adjust this value as needed
     private float damageOverTimeInterval = 0.25f; // Adjust this value as needed
     private float damageOverTimeTimer = 0f;
 
