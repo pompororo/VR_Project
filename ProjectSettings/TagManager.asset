@@ -9,6 +9,7 @@ TagManager:
   - BladeSaber
   - Ai
   - SkillForceL
+  - HandleLightsaber
   layers:
   - Default
   - TransparentFX
