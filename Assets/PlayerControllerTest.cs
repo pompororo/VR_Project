@@ -37,9 +37,11 @@ public class PlayerControllerTest : MonoBehaviour
 
         
         //forcelighting
-        if (mainCamera != null && Input.GetMouseButtonDown(0))
+        if (mainCamera != null && OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
         {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            Vector3 screenPoint = new Vector3(Screen.width * OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger), Screen.height / 2, 0);
+          Ray ray = mainCamera.ScreenPointToRay(screenPoint);
+
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
