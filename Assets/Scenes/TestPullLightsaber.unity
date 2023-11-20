@@ -123,6 +123,59 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 93bbdf570a29da2418bbd6a1ee2188c4, type: 2}
+--- !u!1 &82776740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 82776741}
+  - component: {fileID: 82776742}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: HandleLightsaber
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &82776741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82776740}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2120197375}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &82776742
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82776740}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &88096188
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,9 +322,9 @@ GameObject:
   - component: {fileID: 174224227}
   - component: {fileID: 174224226}
   - component: {fileID: 174224225}
-  - component: {fileID: 174224229}
   - component: {fileID: 174224230}
   - component: {fileID: 174224231}
+  - component: {fileID: 174224232}
   m_Layer: 0
   m_Name: testplayer
   m_TagString: Player
@@ -368,23 +421,6 @@ Transform:
   - {fileID: 1638388072}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &174224229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 174224224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77469b76eb4ca6349965eb1d3a0639ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skillobject: {fileID: 548916389}
-  isSkillActive: 0
-  EnemytargetTrasforms: {fileID: 1638388071}
-  Enemytargets: []
-  duration: 2
 --- !u!54 &174224230
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -434,6 +470,23 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &174224232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174224224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b599f79ccdd1e4e999d4db4486efa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentHealth: 100
+  maxHealth: 100
+  isDying: 0
+  pullForce: 100
+  pullRange: 100
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1959,6 +2012,7 @@ Transform:
   - {fileID: 1364588048}
   - {fileID: 1167572345}
   - {fileID: 435680344}
+  - {fileID: 82776741}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2120197376
