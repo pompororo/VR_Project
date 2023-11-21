@@ -35,9 +35,7 @@ public class Bullet : MonoBehaviour
     {
         // Reverse the bullet's direction
         speed = -speed;
-        float randomRotationY = Random.Range(-50f, 50f);
-
-        transform.rotation = Quaternion.Euler(90f, randomRotationY, 0f);
+      
         
     }
 }
