@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     private static GameManager instance;
 
     public static AffectFieldSkill currentFieldState = AffectFieldSkill.Default;
-    private static float slowTimeDownFactor = 0.05f;
+    private static float slowTimeDownFactor = 0.1f;
     
     // Start is called before the first frame update
     void Awoke()

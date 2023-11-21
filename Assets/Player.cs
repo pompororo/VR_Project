@@ -9,23 +9,21 @@ public class Player : MonoBehaviour
 
     public bool isDying;
     
-    [SerializeField] private float pullForce = 100f; // Adjust the force magnitude
-    [SerializeField] private float pullRange = 100f; // Adjust the range of the force pull
-    private bool isPulling = false;
+    public float pullForce = 5f; // Adjust the force magnitude
     
+    private bool isPulling = false;
+
+    public Transform playerAnchor;
     
     // Start is called before the first frame update
 
+    public void ForcePullingItem()
+    {
+        
+    }
+
     private void StartForcePull()
     {
-        /*
-         *
-         * Raycast ต้องยิงมาจากมือ
-         * Force จะต้องดึง(กด)แค่ครั้งเดียวดึงมาที่มือของเรา (จำของแล้วดึงเรื่อยๆ? who know อย่าหาทำใน start ครั้งเดียว)
-         * Hightlight lightsaber ด้วย
-         * 
-         */
-        
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
         
