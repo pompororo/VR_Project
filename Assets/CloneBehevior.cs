@@ -20,8 +20,7 @@ public class CloneBehavior : EnemyBehavior
     private float damageOverTimeInterval = 0.25f; // Adjust this value as needed
     private float damageOverTimeTimer = 0f;
 
-    public float maxSightDistance ; // Adjust this value as needed
-    public float fieldOfViewAngle ; // Adjust this value to set the field of view angle
+  
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -270,35 +269,6 @@ public class CloneBehavior : EnemyBehavior
         // Adjust the damage value as needed
         TakeDamage((int)(damageOverTimeRate * damageOverTimeInterval));
     }
-    bool IsInFieldOfView(Vector3 targetPosition)
-    {
-        Vector3 directionToTarget = targetPosition - transform.position;
-        float angleToTarget = Vector3.Angle(transform.forward, directionToTarget);
-
-        // Check if the target is within the field of view angle
-        if (angleToTarget < fieldOfViewAngle * 0.5f)
-        {
-            RaycastHit hit;
-
-            // Adjust the layer mask as needed to include only your obstacles layer
-            int layerMask = 1 << LayerMask.NameToLayer("Player");
-
-            // Cast a capsule to represent the triangular field of view
-            if (Physics.CapsuleCast(transform.position, transform.position + transform.forward * maxSightDistance,
-                    maxSightDistance * 0.5f, directionToTarget.normalized, out hit, maxSightDistance, layerMask))
-            {
-                if (hit.collider.CompareTag("Player")) // Change "Obstacle" to the tag of your obstacles
-                {
-                    // If an obstacle is blocking the line of sight, return false
-                    return false;
-                }
-            }
-
-            // If no obstacles are blocking the line of sight, return true
-            return true;
-        }
-
-        return false;
-    }
+  
   
 }
