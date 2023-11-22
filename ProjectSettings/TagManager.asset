@@ -10,6 +10,7 @@ TagManager:
   - Ai
   - SkillForceL
   - HandleLightsaber
+  - Terrain
   layers:
   - Default
   - TransparentFX

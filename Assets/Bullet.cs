@@ -24,6 +24,10 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.CompareTag("Terrain"))
+        {
+            Destroy(gameObject);
+        }
         else if (other.CompareTag("BladeSaber"))
         {
             // Reflect the bullet in the opposite direction
