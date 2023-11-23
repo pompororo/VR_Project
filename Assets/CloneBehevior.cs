@@ -20,6 +20,7 @@ public class CloneBehavior : EnemyBehavior
     private float damageOverTimeInterval = 0.25f; // Adjust this value as needed
     private float damageOverTimeTimer = 0f;
 
+  
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -27,7 +28,7 @@ public class CloneBehavior : EnemyBehavior
         shootCooldown = Random.Range(0.9f, 2);
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         target = player.transform;
-
+        
         SetState(EnemyState.Walk);
     }
 
@@ -91,16 +92,32 @@ public class CloneBehavior : EnemyBehavior
 
     void HandleFireState()
     {
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
-        // If no AI is blocking, continue with firing logic
-        transform.LookAt(target.position);
-
-        timer += Time.deltaTime;
-
-        if (timer >= shootCooldown)
+        // If the player is outside the maximum sight distance, switch back to Walk state
+        if (distanceToTarget > maxSightDistance)
         {
-            Shoot();
-            timer = 0f;
+            SetState(EnemyState.Walk);
+            return;
+        }
+
+        // If no AI is blocking and the player is within the field of view angle, continue with firing logic
+        if (IsInFieldOfView(target.position))
+        {
+            transform.LookAt(target.position);
+
+            timer += Time.deltaTime;
+
+            if (timer >= shootCooldown)
+            {
+                Shoot();
+                timer = 0f;
+            }
+        }
+        else
+        {
+            // If there is no line of sight, switch back to Walk state
+            SetState(EnemyState.Walk);
         }
     }
 
@@ -252,6 +269,6 @@ public class CloneBehavior : EnemyBehavior
         // Adjust the damage value as needed
         TakeDamage((int)(damageOverTimeRate * damageOverTimeInterval));
     }
-
+  
   
 }

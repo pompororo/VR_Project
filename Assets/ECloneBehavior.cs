@@ -19,6 +19,8 @@ public class ECloneBehavior : EnemyBehavior
     private float damageOverTimeRate = 55f; // Adjust this value as needed
     private float damageOverTimeInterval = 0.25f; // Adjust this value as needed
     private float damageOverTimeTimer = 0f;
+    
+    
 
     void Start()
     {
@@ -90,15 +92,32 @@ public class ECloneBehavior : EnemyBehavior
 
     void HandleFireState()
     {
-    
-        transform.LookAt(target.position);
+        float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
-        timer += Time.deltaTime;
-
-        if (timer >= shootCooldown)
+        // If the player is outside the maximum sight distance, switch back to Walk state
+        if (distanceToTarget > maxSightDistance)
         {
-            Shoot();
-            timer = 0f;
+            SetState(EnemyState.Walk);
+            return;
+        }
+
+        // If no AI is blocking and the player is within the field of view angle, continue with firing logic
+        if (IsInFieldOfView(target.position))
+        {
+            transform.LookAt(target.position);
+
+            timer += Time.deltaTime;
+
+            if (timer >= shootCooldown)
+            {
+                Shoot();
+                timer = 0f;
+            }
+        }
+        else
+        {
+            // If there is no line of sight, switch back to Walk state
+            SetState(EnemyState.Walk);
         }
     }
 

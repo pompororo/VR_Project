@@ -24,6 +24,10 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (other.CompareTag("Terrain"))
+        {
+            Destroy(gameObject);
+        }
         else if (other.CompareTag("BladeSaber"))
         {
             // Reflect the bullet in the opposite direction
@@ -35,9 +39,7 @@ public class Bullet : MonoBehaviour
     {
         // Reverse the bullet's direction
         speed = -speed;
-        float randomRotationY = Random.Range(-50f, 50f);
-
-        transform.rotation = Quaternion.Euler(90f, randomRotationY, 0f);
+      
         
     }
 }
