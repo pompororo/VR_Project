@@ -17,11 +17,6 @@ public class Player : MonoBehaviour
     
     // Start is called before the first frame update
 
-    public void ForcePullingItem()
-    {
-        
-    }
-
     private void StartForcePull()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -50,19 +45,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((OVRInput.GetDown(OVRInput.Button.One) || Input.GetKeyDown(KeyCode.Tab)) && GameManager.currentFieldState != AffectFieldSkill.SlowTime)
-        {
-            GameManager.ActiveSlowTime();
-        }
-        else if((OVRInput.GetDown(OVRInput.Button.One) || Input.GetKeyDown(KeyCode.Tab)) && GameManager.currentFieldState == AffectFieldSkill.SlowTime)
-        {
-            GameManager.DefaultFieldState();
-        }
         
-        //อย่าหาทำพอเรียกซ้ำแล้วกลายเป็นช้าเลย
-        if (Input.GetMouseButtonDown(0))
-        {
-            StartForcePull();
-        }
     }
 }

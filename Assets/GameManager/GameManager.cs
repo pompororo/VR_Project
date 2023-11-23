@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public static AffectFieldSkill currentFieldState = AffectFieldSkill.Default;
     private static float slowTimeDownFactor = 0.1f;
     
+    public static bool hasUpdated = false;
+    
     // Start is called before the first frame update
     void Awoke()
     {
@@ -28,25 +30,20 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(currentFieldState);
-        #region ลบตอนใส่จริงมันต้องอยู่ที่ player
+        if (!hasUpdated)
+        {
+            switch (currentFieldState)
+            {
+                case AffectFieldSkill.SlowTime:
+                    ActiveSlowTime();
+                    break;
 
-        if ( Input.GetKeyDown(KeyCode.Tab) && GameManager.currentFieldState != AffectFieldSkill.SlowTime)
-        {
-            Debug.Log("tab is press");
-            GameManager.ActiveSlowTime();
-        }
-        else if (Input.GetKeyDown(KeyCode.Tab) && GameManager.currentFieldState == AffectFieldSkill.SlowTime)
-        {
-            GameManager.DefaultFieldState();
-        }
+                case AffectFieldSkill.Default:
+                    DefaultFieldState();
+                    break;
+            }
 
-        #endregion
-        
-        switch (currentFieldState)
-        {
-            case AffectFieldSkill.SlowTime:
-                break;
+            hasUpdated = true;
         }
     }
 
