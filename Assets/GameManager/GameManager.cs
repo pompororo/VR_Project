@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
 {
@@ -67,6 +69,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]private Transform spawnPoint0;
     [SerializeField]private Transform spawnPoint1;
+    [SerializeField]private Transform spawnPoint2;
     [SerializeField] private Transform enemyParent;
     [SerializeField] private GameObject enemyPrefab;
     public int sizeSpawn;
@@ -75,7 +78,12 @@ public class GameManager : MonoBehaviour
     private float _elapsedTime = 0f;
     public float waveDuration = 60f;
 
-    private void SpawnGroupOfEnemy(int Count)
+    private void Start()
+    {
+        SpawnGroupOfEnemy(enemyToSpawnCount);
+    }
+    
+    public void SpawnGroupOfEnemy(int Count)
     {
         for(int i = 0; i < Count;i++)
         {
@@ -85,7 +93,8 @@ public class GameManager : MonoBehaviour
 
     private void RandomSpawnPoint(GameObject enemy)
     {
-        int spawnPoint = Random.Range(0, 1);
+        int spawnPoint = Random.Range(0, 3);
+
         switch (spawnPoint)
         {
             case 0:
@@ -94,15 +103,18 @@ public class GameManager : MonoBehaviour
             case 1:
                 Instantiate(enemy, GenerateSpawnInSpawnPoint(spawnPoint1, sizeSpawn), Quaternion.identity, enemyParent);
                 break;
+            case 2:
+                Instantiate(enemy, GenerateSpawnInSpawnPoint(spawnPoint2, sizeSpawn), Quaternion.identity, enemyParent);
+                break;
         }
     }
     
     private Vector3 GenerateSpawnInSpawnPoint(Transform spawnPoint,int size)
     {
         Vector3 result = new Vector3(
-            Random.Range(-spawnPoint.position.x / 2, spawnPoint.position.x / 2),
+            Random.Range(-spawnPoint.position.x-size / 2, spawnPoint.position.x+size / 2),
             1,
-            Random.Range(-spawnPoint.position.y / 2, spawnPoint.position.y / 2));
+            Random.Range(-spawnPoint.position.z-size / 2, spawnPoint.position.z+size / 2));
 
         return result;
     }

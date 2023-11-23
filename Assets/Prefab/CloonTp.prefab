@@ -501,6 +501,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  maxSightDistance: 0
+  fieldOfViewAngle: 0
   target: {fileID: 0}
   bulletPoint: {fileID: 5288504998538096113}
   bulletPrefab: {fileID: 1434569189395777492, guid: c3da5156a1fe5d44b9d370f9760503ee,
