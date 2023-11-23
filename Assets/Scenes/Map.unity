@@ -6389,7 +6389,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 6014373132942306852, guid: a839ac88e2d70d44099faf03f5efdb18,
     type: 3}
   sizeSpawn: 4
-  enemyToSpawnCount: 5
+  enemyToSpawnCount: 8
   waveDuration: 60
 --- !u!4 &1722542363
 Transform:
