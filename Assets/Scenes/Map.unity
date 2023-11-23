@@ -214,7 +214,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 0
   maxHealth: 60
-  isDying: 0
   pullForce: 5
   playerAnchor: {fileID: 1627200795}
 --- !u!1 &277365183
@@ -1136,8 +1135,7 @@ Transform:
   m_LocalPosition: {x: 0.029809862, y: 1.7503424, z: -10.115479}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1377559381}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &885423024
@@ -1449,74 +1447,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1390534762}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1052352293
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 849627186}
-    m_Modifications:
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.069
-      objectReference: {fileID: 0}
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.021899998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.1750001
-      objectReference: {fileID: 0}
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2185459071089583948, guid: cbf28497c5233ba4189011db15bba321,
-        type: 3}
-      propertyPath: m_Name
-      value: E CloonTp
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: cbf28497c5233ba4189011db15bba321, type: 3}
 --- !u!1001 &1084778896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2135,12 +2065,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365666197}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1377559381 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1425477446655491005, guid: cbf28497c5233ba4189011db15bba321,
-    type: 3}
-  m_PrefabInstance: {fileID: 1052352293}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1390534762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6461,11 +6385,16 @@ MonoBehaviour:
   spawnPoint1: {fileID: 829445206}
   spawnPoint2: {fileID: 693186228}
   enemyParent: {fileID: 849627186}
+  sizeSpawn: 4
   enemyPrefab: {fileID: 6014373132942306852, guid: a839ac88e2d70d44099faf03f5efdb18,
     type: 3}
-  sizeSpawn: 4
-  enemyToSpawnCount: 8
-  waveDuration: 60
+  percentOfEnemy: 0.8
+  enemyPrefab2: {fileID: 2185459071089583948, guid: cbf28497c5233ba4189011db15bba321,
+    type: 3}
+  percentOfEnemy2: 0.2
+  enemyToSpawnCount: 5
+  MoreEnemyEveryRound: 3
+  waveDuration: 25
 --- !u!4 &1722542363
 Transform:
   m_ObjectHideFlags: 0

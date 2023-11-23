@@ -28,8 +28,11 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject); // Ensure it persists through scene changes
         }
     }
-
-    // Update is called once per frame
+    
+    private void Start()
+    {
+        SpawnGroupOfEnemy(enemyToSpawnCount);
+    }
     void Update()
     {
         if (!hasUpdated)
@@ -46,6 +49,16 @@ public class GameManager : MonoBehaviour
             }
 
             hasUpdated = true;
+        }
+        
+        
+        //WAVE SPAWM
+        elapsedTime += Time.deltaTime;
+        
+        if (elapsedTime >= waveDuration || enemyParent.childCount == 0)
+        {
+            elapsedTime = 0f;
+            SpawnGroupOfEnemy(enemyToSpawnCount);
         }
     }
 
@@ -67,28 +80,61 @@ public class GameManager : MonoBehaviour
 
     #region SpawnWave
 
+    [Header("SpawnPoint&Enemy")]
     [SerializeField]private Transform spawnPoint0;
     [SerializeField]private Transform spawnPoint1;
     [SerializeField]private Transform spawnPoint2;
     [SerializeField] private Transform enemyParent;
-    [SerializeField] private GameObject enemyPrefab;
-    public int sizeSpawn;
-    public int enemyToSpawnCount;
     
-    private float _elapsedTime = 0f;
+    public int sizeSpawn;
+
+    [SerializeField] private GameObject enemyPrefab;
+    public float percentOfEnemy;
+    [SerializeField] private GameObject enemyPrefab2;
+    public float percentOfEnemy2;
+    
+    
+    
+    [Header("WaveManage")]
+    public int enemyToSpawnCount;
+    public int MoreEnemyEveryRound;
+    
+    private int waveRound = 1;
+    
+    private float elapsedTime = 0f;
     public float waveDuration = 60f;
 
-    private void Start()
-    {
-        SpawnGroupOfEnemy(enemyToSpawnCount);
-    }
-    
     public void SpawnGroupOfEnemy(int Count)
     {
-        for(int i = 0; i < Count;i++)
+        int result;
+        if (waveRound == 1)
         {
-            RandomSpawnPoint(enemyPrefab);
+            result = Count;
         }
+        else
+        {
+            result = Count + MoreEnemyEveryRound;
+            MoreEnemyEveryRound += MoreEnemyEveryRound;
+        }
+        int aEnemyCount = (int)(result * percentOfEnemy);
+        int bEnemyCount = result - aEnemyCount;
+        
+        //RandomSpawn
+        for (int i = 0; i < result; i++)
+        {
+            if (i < aEnemyCount)
+            {
+                // Spawn A enemy until the count for A enemies is reached
+                RandomSpawnPoint(enemyPrefab);
+            }
+            else
+            {
+                // Spawn B enemy for the remaining count
+                RandomSpawnPoint(enemyPrefab2);
+            }
+        }
+        
+        waveRound++;
     }
 
     private void RandomSpawnPoint(GameObject enemy)
