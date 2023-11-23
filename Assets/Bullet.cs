@@ -16,10 +16,10 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        /*if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
-        }
+        }*/
         if (other.CompareTag("Ai"))
         {
             Destroy(gameObject);

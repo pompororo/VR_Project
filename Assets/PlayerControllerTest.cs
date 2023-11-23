@@ -106,6 +106,4 @@ public class PlayerControllerTest : MonoBehaviour
         Enemytargets.Clear();
         timer = 0f;
     }
-    
-    
 }

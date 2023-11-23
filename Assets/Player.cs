@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,7 +8,7 @@ public class Player : MonoBehaviour
     public float currentHealth;
     public float maxHealth;
 
-    public bool isDying;
+    private bool isDying;
     
     public float pullForce = 5f; // Adjust the force magnitude
     
@@ -17,7 +18,7 @@ public class Player : MonoBehaviour
     
     // Start is called before the first frame update
 
-    private void StartForcePull()
+    /*private void StartForcePull()
     {
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
@@ -40,11 +41,43 @@ public class Player : MonoBehaviour
                 }
             }
         }
+    }*/
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!isDying)
+        {
+            if (currentHealth <= 0)
+            {
+                isDying = true;
+            }
+        }
+
+        if (isDying)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Bullet"))
+            {
+                InputDamage(20);
+                Destroy(other.gameObject);
+            }
         
+    }
+
+
+    private void InputDamage(int damage)
+    {
+        currentHealth -= damage;
     }
 }
