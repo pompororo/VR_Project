@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -12,10 +13,18 @@ public class GameManager : MonoBehaviour
     private static float slowTimeDownFactor = 0.1f;
     
     public static bool hasUpdated = false;
+
+    public bool stopSpawning = false;
+    public bool clearEnemy = false;
+    
+    public float maxStamina = 100f;
+    public float currentStamina;
+    public float staminaRegenerationRate = 5f;
     
     // Start is called before the first frame update
     void Awoke()
     {
+
         if (instance != null && instance != this)
         {
             // If an instance already exists and it's not this one, destroy this GameManager
@@ -32,9 +41,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SpawnGroupOfEnemy(enemyToSpawnCount);
+        currentStamina = maxStamina;
     }
     void Update()
     {
+        RegenerateStamina();
         if (!hasUpdated)
         {
             switch (currentFieldState)
@@ -42,31 +53,83 @@ public class GameManager : MonoBehaviour
                 case AffectFieldSkill.SlowTime:
                     ActiveSlowTime();
                     break;
-
                 case AffectFieldSkill.Default:
                     DefaultFieldState();
+                    break;
+                case AffectFieldSkill.Pause :
+                    PauseFieldState();
                     break;
             }
 
             hasUpdated = true;
         }
-        
+        else if (waveRound == waveToWin)
+        {
+            Victory();
+        }
         
         //WAVE SPAWM
-        elapsedTime += Time.deltaTime;
-        
-        if (elapsedTime >= waveDuration || enemyParent.childCount == 0)
+        if (!stopSpawning && waveRound != waveToWin)
         {
-            elapsedTime = 0f;
-            SpawnGroupOfEnemy(enemyToSpawnCount);
+            elapsedTime += Time.deltaTime;
+        
+            if (elapsedTime >= waveDuration || enemyParent.childCount == 0)
+            {
+                elapsedTime = 0f;
+                SpawnGroupOfEnemy(enemyToSpawnCount);
+                waveRound++;
+            }
         }
+
+        if (clearEnemy)
+        {
+            foreach (Transform child in enemyParent)
+            {
+                Destroy(child.gameObject);
+            }
+            clearEnemy = false;
+        }
+    }
+
+    private void RegenerateStamina()
+    {
+        if (currentStamina < maxStamina)
+        {
+            // Increase stamina over time at a specified regeneration rate.
+            currentStamina += staminaRegenerationRate * Time.deltaTime;
+
+            // Ensure stamina doesn't exceed the maximum value.
+            currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
+            
+        }
+    }
+    
+    public void UseStamina(float amount)
+    {
+        if (currentStamina >= amount)
+        {
+            // Perform the action that requires stamina.
+
+            // Decrease stamina based on the amount used.
+            currentStamina -= amount;
+        }
+        else
+        {
+            // Not enough stamina to perform the action. Handle this situation accordingly.
+            Debug.Log("Not enough stamina!");
+        }
+    }
+
+    private void PauseFieldState()
+    {
+        Time.timeScale = 0;
+        Time.fixedDeltaTime = Time.timeScale * 0.2f;
     }
 
     #region AffectFieldSkill
     
      public static void ActiveSlowTime()
      {
-         currentFieldState = AffectFieldSkill.SlowTime;
          Time.timeScale = slowTimeDownFactor;
          Time.fixedDeltaTime = Time.timeScale * 0.2f;
      }
@@ -100,6 +163,7 @@ public class GameManager : MonoBehaviour
     public int MoreEnemyEveryRound;
     
     private int waveRound = 1;
+    public int waveToWin = 5;
     
     private float elapsedTime = 0f;
     public float waveDuration = 60f;
@@ -133,8 +197,6 @@ public class GameManager : MonoBehaviour
                 RandomSpawnPoint(enemyPrefab2);
             }
         }
-        
-        waveRound++;
     }
 
     private void RandomSpawnPoint(GameObject enemy)
@@ -158,15 +220,27 @@ public class GameManager : MonoBehaviour
     private Vector3 GenerateSpawnInSpawnPoint(Transform spawnPoint,int size)
     {
         Vector3 result = new Vector3(
-            Random.Range(-spawnPoint.position.x-size / 2, spawnPoint.position.x+size / 2),
+            Random.Range(spawnPoint.position.x-size, spawnPoint.position.x+size),
             1,
-            Random.Range(-spawnPoint.position.z-size / 2, spawnPoint.position.z+size / 2));
+            Random.Range(spawnPoint.position.z-size, spawnPoint.position.z+size));
 
         return result;
     }
 
     #endregion
+
+    public TextMeshProUGUI victory;
+    private void Victory()
+    {
+        currentFieldState = AffectFieldSkill.Pause;
+        stopSpawning = true;
+        clearEnemy = true;
+        victory.gameObject.SetActive(true);
+    }
 }
+
+
+
 
 public enum AffectFieldSkill
 {
