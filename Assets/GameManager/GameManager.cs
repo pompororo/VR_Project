@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     {
         SpawnGroupOfEnemy(enemyToSpawnCount);
         currentStamina = maxStamina;
+        waveRound = 1;
     }
     void Update()
     {
@@ -63,7 +64,7 @@ public class GameManager : MonoBehaviour
 
             hasUpdated = true;
         }
-        else if (waveRound == waveToWin)
+        else if (waveRound >= waveToWin)
         {
             Victory();
         }
@@ -163,7 +164,7 @@ public class GameManager : MonoBehaviour
     public int MoreEnemyEveryRound;
     
     private int waveRound = 1;
-    public int waveToWin = 5;
+    public int waveToWin = 6;
     
     private float elapsedTime = 0f;
     public float waveDuration = 60f;
@@ -180,23 +181,33 @@ public class GameManager : MonoBehaviour
             result = Count + MoreEnemyEveryRound;
             MoreEnemyEveryRound += MoreEnemyEveryRound;
         }
-        int aEnemyCount = (int)(result * percentOfEnemy);
-        int bEnemyCount = result - aEnemyCount;
+        
         
         //RandomSpawn
-        for (int i = 0; i < result; i++)
+        RandomSpawnPoint(enemyPrefab);
+        StartCoroutine(SpawnWithDelay(result));
+        
+    }
+
+    private IEnumerator SpawnWithDelay(int count)
+    {
+        count = count - 1;
+        int aEnemyCount = (int)(count * percentOfEnemy);
+        int bEnemyCount = count - aEnemyCount;
+        for (int i = 0; i < count; i++)
         {
             if (i < aEnemyCount)
             {
-                // Spawn A enemy until the count for A enemies is reached
+                yield return new WaitForSeconds(1f);
                 RandomSpawnPoint(enemyPrefab);
             }
             else
             {
-                // Spawn B enemy for the remaining count
+                yield return new WaitForSeconds(1f);
                 RandomSpawnPoint(enemyPrefab2);
             }
         }
+        
     }
 
     private void RandomSpawnPoint(GameObject enemy)
