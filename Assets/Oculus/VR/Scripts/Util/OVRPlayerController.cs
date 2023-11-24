@@ -379,7 +379,7 @@ public class OVRPlayerController : MonoBehaviour
             if (!Controller.isGrounded)
                 MoveScale = 0.0f;
 
-            MoveScale *= SimulationRate * Time.deltaTime;
+            MoveScale *= SimulationRate * Time.unscaledDeltaTime;
 
             // Compute this for key movement
             float moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;
