@@ -46,8 +46,6 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        
-        
         RegenerateStamina();
         if (!hasUpdated)
         {
@@ -55,17 +53,20 @@ public class GameManager : MonoBehaviour
             {
                 case AffectFieldSkill.SlowTime:
                     ActiveSlowTime();
+                    hasUpdated = true;
                     break;
                 case AffectFieldSkill.Default:
                     DefaultFieldState();
+                    hasUpdated = true;
                     break;
                 case AffectFieldSkill.Pause :
                     PauseFieldState();
+                    hasUpdated = true;
                     break;
             }
-
-            hasUpdated = true;
+            Debug.Log(currentFieldState);
         }
+
         else if (waveRound >= waveToWin)
         {
             Victory();
@@ -139,8 +140,8 @@ public class GameManager : MonoBehaviour
 
      public static void DefaultFieldState()
      {
-         currentFieldState = AffectFieldSkill.Default;
          Time.timeScale = 1;
+         Time.fixedDeltaTime = Time.timeScale;
      }
     #endregion
 

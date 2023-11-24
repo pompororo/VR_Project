@@ -51,12 +51,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Tab) || OVRInput.GetDown(OVRInput.Button.One) && GameManager.currentFieldState == AffectFieldSkill.Default))
+        if ((Input.GetKeyDown(KeyCode.Tab) || OVRInput.GetDown(OVRInput.Button.One)) && GameManager.currentFieldState == AffectFieldSkill.Default)
         {
             GameManager.currentFieldState = AffectFieldSkill.SlowTime;
             GameManager.hasUpdated = false;
         }
-        else if((Input.GetKeyDown(KeyCode.Tab) || OVRInput.GetDown(OVRInput.Button.One) && GameManager.currentFieldState == AffectFieldSkill.SlowTime))
+        else if((Input.GetKeyDown(KeyCode.Tab) || OVRInput.GetDown(OVRInput.Button.One)) && GameManager.currentFieldState == AffectFieldSkill.SlowTime)
         {
             GameManager.currentFieldState = AffectFieldSkill.Default;
             GameManager.hasUpdated = false;
