@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
+        
+        
         RegenerateStamina();
         if (!hasUpdated)
         {

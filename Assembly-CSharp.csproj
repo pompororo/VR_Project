@@ -264,6 +264,7 @@
      <Folder Include="Assets\Oculus\Voice\Samples" />
      <None Include="Assets\Oculus\SampleFramework\Usage\DistanceGrab\Materials\CrosshairZCheat.shader" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\OVROverlay\Prefabs" />
+     <Folder Include="Assets\SceneAsset\ControlTable" />
      <Folder Include="Assets\Oculus\SampleFramework\Usage\OVROverlay\Materials" />
      <Folder Include="Assets\polyperfect\Poly Halloween\- Materials" />
      <Folder Include="Assets\Oculus\SampleFramework\Core\TouchControllers\NewTouchControllers" />
