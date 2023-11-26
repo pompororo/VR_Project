@@ -553,8 +553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97b599f79ccdd1e4e999d4db4486efa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 0
-  maxHealth: 60
+  currentHealth: 2000
+  maxHealth: 2000
   pullForce: 5
   playerAnchor: {fileID: 1627200795}
 --- !u!1001 &228246993
@@ -8480,7 +8480,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722542361}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f42f45e5441164cb403f3f2bce69bd, type: 3}
   m_Name: 

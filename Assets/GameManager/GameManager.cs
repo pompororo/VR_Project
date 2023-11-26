@@ -141,7 +141,7 @@ public class GameManager : MonoBehaviour
      public static void DefaultFieldState()
      {
          Time.timeScale = 1;
-         Time.fixedDeltaTime = Time.timeScale;
+         Time.fixedDeltaTime = 0.02f;
      }
     #endregion
 
