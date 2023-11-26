@@ -19,4 +19,12 @@ public class ColliderHandler : MonoBehaviour
             other.transform.localPosition = newPosition;
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag(targetTag) && other.transform.parent == parentObject)
+        {
+            // Unset the parent when the object exits the collider
+            other.transform.SetParent(null);
+        }
+    }
 }
