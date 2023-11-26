@@ -854,7 +854,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 312818940}
-  - component: {fileID: 312818939}
   - component: {fileID: 312818938}
   - component: {fileID: 312818937}
   - component: {fileID: 312818936}
@@ -865,8 +864,9 @@ GameObject:
   - component: {fileID: 312818931}
   - component: {fileID: 312818930}
   - component: {fileID: 312818929}
+  - component: {fileID: 312818941}
   m_Layer: 7
-  m_Name: Saber (1)
+  m_Name: Saber Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider: {fileID: 312818939}
+  _collider: {fileID: 0}
 --- !u!114 &312818933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1102,12 +1102,36 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &312818939
-BoxCollider:
+--- !u!4 &312818940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312818928}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0.7071068, z: -0, w: 0}
+  m_LocalPosition: {x: -0.492, y: 1.79, z: -17.34}
+  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1589454459}
+  - {fileID: 1738325590}
+  - {fileID: 1847781152}
+  - {fileID: 1860442772}
+  - {fileID: 803582932}
+  - {fileID: 249260013}
+  - {fileID: 1915124929}
+  - {fileID: 1270074773}
+  - {fileID: 1441096789}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -90}
+--- !u!136 &312818941
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1124,32 +1148,11 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.03, y: 0.054837625, z: 0.03}
-  m_Center: {x: -0, y: 0.00680497, z: -0}
---- !u!4 &312818940
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312818928}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.492, y: 1.293, z: -17.34}
-  m_LocalScale: {x: 10, y: 10, z: 10}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1589454459}
-  - {fileID: 1738325590}
-  - {fileID: 1847781152}
-  - {fileID: 1860442772}
-  - {fileID: 803582932}
-  - {fileID: 249260013}
-  - {fileID: 1915124929}
-  - {fileID: 1270074773}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Radius: 0.005
+  m_Height: 0.05
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &326706284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3670870134194360398, guid: 9fa0bb3511cdf814abe516c803ad7be7,
@@ -1834,6 +1837,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a4dbe4d6e27a6a4d9f89cdff3121cac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Lightsaber
       objectReference: {fileID: 0}
     - target: {fileID: 1507767883509144192, guid: 3a4dbe4d6e27a6a4d9f89cdff3121cac,
         type: 3}
@@ -7889,6 +7897,74 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1431705345}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1441096788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1441096789}
+  - component: {fileID: 1441096791}
+  - component: {fileID: 1441096790}
+  m_Layer: 7
+  m_Name: Connectpoint
+  m_TagString: HandleLightsaber
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1441096789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441096788}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.0249, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 312818940}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1441096790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441096788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc78cdfd5402d84e90a015ba818cc3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTag: Lightsaber
+  parentObject: {fileID: 1441096789}
+--- !u!65 &1441096791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441096788}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.01, y: 0.01, z: 0.01}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1450701696
 GameObject:
   m_ObjectHideFlags: 0
@@ -8480,7 +8556,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722542361}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f42f45e5441164cb403f3f2bce69bd, type: 3}
   m_Name: 
@@ -11514,7 +11590,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -13153,8 +13229,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9184433239351252871}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.293, z: -17.341}
+  m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: 0, w: 0}
+  m_LocalPosition: {x: 0.169, y: 1.79, z: -17.341}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13167,7 +13243,7 @@ Transform:
   - {fileID: 964134129}
   - {fileID: 785140557}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 90}
 --- !u!1 &5602258371498863924
 GameObject:
   m_ObjectHideFlags: 0
@@ -13983,27 +14059,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7239773028310542780
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9184433239351252871}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.03, y: 0.054837625, z: 0.03}
-  m_Center: {x: -0, y: 0.00680497, z: -0}
 --- !u!23 &7341882479804982241
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15224,7 +15279,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5547270222219537109}
-  - component: {fileID: 7239773028310542780}
   - component: {fileID: 3694673468380763695}
   - component: {fileID: 926955713483647590}
   - component: {fileID: 5268912601130575274}
@@ -15235,9 +15289,10 @@ GameObject:
   - component: {fileID: 9184433239351252874}
   - component: {fileID: 9184433239351252873}
   - component: {fileID: 9184433239351252877}
+  - component: {fileID: 9184433239351252878}
   m_Layer: 7
-  m_Name: Saber
-  m_TagString: Untagged
+  m_Name: Saber Green
+  m_TagString: Lightsaber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15361,7 +15416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2140d2b457bea84881488302059889b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _collider: {fileID: 7239773028310542780}
+  _collider: {fileID: 0}
 --- !u!114 &9184433239351252876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15394,6 +15449,29 @@ MonoBehaviour:
     MaxScale:
       Constrain: 0
       Value: 0
+--- !u!136 &9184433239351252878
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9184433239351252871}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.005
+  m_Height: 0.05
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
