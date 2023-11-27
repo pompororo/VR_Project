@@ -20,10 +20,12 @@ public class CloneBehavior : EnemyBehavior
     private float damageOverTimeInterval = 0.25f; // Adjust this value as needed
     private float damageOverTimeTimer = 0f;
 
+    public Animator animation;
   
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        animation = GetComponent<Animator>();
         randomstopdistaceTarget = Random.Range(5, 12);
         shootCooldown = Random.Range(0.9f, 2);
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -61,6 +63,8 @@ public class CloneBehavior : EnemyBehavior
     void HandleWalkState()
     {
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
+        animation.SetTrigger("Walk");
+        
         if (IsAnotherAIBlocking())
         {
             MoveToSide();
