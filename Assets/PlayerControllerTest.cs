@@ -33,7 +33,7 @@ public class PlayerControllerTest : MonoBehaviour
 
         
         //forcelighting
-        if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger) || Input.GetKeyDown(KeyCode.A))
+        if (OVRInput.GetDown(OVRInput.RawButton.X) || OVRInput.GetDown(OVRInput.RawButton.A)|| Input.GetKeyDown(KeyCode.A))
         {
             Ray ray = new Ray(transform.position, transform.forward);
             RaycastHit[] hits = Physics.RaycastAll(ray, rayLength);
