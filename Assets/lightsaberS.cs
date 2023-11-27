@@ -18,10 +18,20 @@ public class lightsaberS : MonoBehaviour
     }
     public void BladeOn()
     {
-        blade.SetActive(true);
+        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
+        {
+            Debug.Log("Open Light Saber");
+            blade.SetActive(true);
+        }
+
     }
+        
     public void BladeOff()
     {
-        blade.SetActive(false);
+        if (OVRInput.Get(OVRInput.Button.PrimaryHandTrigger))
+        {
+            Debug.Log("Close Light Saber");
+            blade.SetActive(false);
+        }
     }
 }
