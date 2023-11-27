@@ -365,6 +365,7 @@ GameObject:
   - component: {fileID: 414030622564349494}
   - component: {fileID: 6454088252209499346}
   - component: {fileID: 522830335211963635}
+  - component: {fileID: -8065558663195869569}
   m_Layer: 6
   m_Name: CloonTp
   m_TagString: Ai
@@ -530,3 +531,24 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &-8065558663195869569
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6014373132942306852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 7f0adab7ab38efe4d8320b6a40e2c5e5, type: 3}
+  m_Controller: {fileID: 9100000, guid: 989665ff8ee3b0040a80338a09cb384e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
