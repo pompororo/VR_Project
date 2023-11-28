@@ -9,7 +9,7 @@ public abstract class EnemyBehavior : MonoBehaviour
     public float maxSightDistance ; // Adjust this value as needed
     public float fieldOfViewAngle ; // Adjust this value to set the field of view angle
     
-    public Animator animation;
+  //  public Animator animation;
     
     void Start()
     {
@@ -83,8 +83,7 @@ public abstract class EnemyBehavior : MonoBehaviour
         // Implement your logic for enemy death here
         // For example, play death animation, destroy the object, etc.
         //RagdollModeOn();
-        animation.SetBool("Walk",false);
-        animation.SetBool("isDeath", true);
+    
         //Destroy(gameObject);
     }
     
