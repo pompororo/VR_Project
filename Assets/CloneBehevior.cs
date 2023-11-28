@@ -20,7 +20,7 @@ public class CloneBehavior : EnemyBehavior
     private float damageOverTimeInterval = 0.25f; // Adjust this value as needed
     private float damageOverTimeTimer = 0f;
 
-    public Animator animation;
+ 
   
     void Start()
     {
@@ -110,8 +110,11 @@ public class CloneBehavior : EnemyBehavior
         // If no AI is blocking and the player is within the field of view angle, continue with firing logic
         if (IsInFieldOfView(target.position))
         {
-            transform.LookAt(target.position);
+            Vector3 targetPositionWithoutY = new Vector3(target.position.x, transform.position.y, target.position.z);
+            transform.LookAt(targetPositionWithoutY);
 
+            // Restore the original X-axis rotation
+            transform.rotation = Quaternion.Euler(originalRotation.eulerAngles.x, transform.rotation.eulerAngles.y, originalRotation.eulerAngles.z);
             timer += Time.deltaTime;
 
             if (timer >= shootCooldown)
@@ -152,8 +155,12 @@ public class CloneBehavior : EnemyBehavior
 
     void MoveToSide()
     {
-        transform.LookAt(target.position);
-        timer += Time.deltaTime;
+        Quaternion originalRotation = transform.rotation;
+        Vector3 targetPositionWithoutY = new Vector3(target.position.x, transform.position.y, target.position.z);
+        transform.LookAt(targetPositionWithoutY);
+
+        // Restore the original X-axis rotation
+        transform.rotation = Quaternion.Euler(originalRotation.eulerAngles.x, transform.rotation.eulerAngles.y, originalRotation.eulerAngles.z);
 
         if (timer >= 1.5f)
         {
