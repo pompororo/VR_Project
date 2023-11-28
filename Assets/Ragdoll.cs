@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Ragdoll : MonoBehaviour
 {
-    public BoxCollider MainCollider;
+    public CapsuleCollider MainCollider;
     public GameObject cloonRig;
     public Animator cloonAni;
     

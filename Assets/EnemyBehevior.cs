@@ -8,6 +8,12 @@ public abstract class EnemyBehavior : MonoBehaviour
     protected EnemyState currentState = EnemyState.Idle;
     public float maxSightDistance ; // Adjust this value as needed
     public float fieldOfViewAngle ; // Adjust this value to set the field of view angle
+    
+    public Animator animation;
+    
+    void Start()
+    {
+    }
     protected Transform FindNearestCover(string coverTag)
     {
         GameObject[] coverObjects = GameObject.FindGameObjectsWithTag(coverTag);
@@ -76,7 +82,10 @@ public abstract class EnemyBehavior : MonoBehaviour
     {
         // Implement your logic for enemy death here
         // For example, play death animation, destroy the object, etc.
-        Destroy(gameObject);
+        //RagdollModeOn();
+        animation.SetBool("Walk",false);
+        animation.SetBool("isDeath", true);
+        //Destroy(gameObject);
     }
     
     protected void SetState(EnemyState newState)
@@ -114,6 +123,10 @@ public abstract class EnemyBehavior : MonoBehaviour
 
         return false;
     }
+   
+   
+    
+   
     public enum EnemyState
     {
         Idle,

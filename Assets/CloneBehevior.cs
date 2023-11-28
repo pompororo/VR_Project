@@ -97,7 +97,7 @@ public class CloneBehavior : EnemyBehavior
 
     void HandleFireState()
     {
-        animation.SetTrigger("Start");
+        animation.SetBool("Walk",true);
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
         // If the player is outside the maximum sight distance, switch back to Walk state

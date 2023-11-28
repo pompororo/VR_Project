@@ -24,14 +24,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494797174291231350}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.047860127, y: -0.18313143, z: 0.20059963, w: -0.9612139}
-  m_LocalPosition: {x: 0.0327, y: 0.00411, z: -0.00195}
+  m_LocalRotation: {x: -0.015036903, y: 0.0071369973, z: -0.76505864, w: 0.6437455}
+  m_LocalPosition: {x: 0.03232988, y: 0.0027470947, z: -0.0017584811}
   m_LocalScale: {x: 0.00014251345, y: 0.00014251347, z: 0.0001425134}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7965816447441199689}
   m_Father: {fileID: 1326758831391838838}
-  m_LocalEulerAnglesHint: {x: 90, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.484, y: 1.845, z: -99.851}
 --- !u!1 &1139688976060310044
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 2121773034236930988}
   - component: {fileID: 6885049430444866701}
   - component: {fileID: 8628419873147594744}
+  - component: {fileID: 816242394398771399}
   m_Layer: 6
   m_Name: E CloonTp
   m_TagString: Ai
@@ -364,11 +365,35 @@ MonoBehaviour:
   health: 150
   maxSightDistance: 25
   fieldOfViewAngle: 45
+  MainCollider: {fileID: 1084798006868393592}
+  cloonRig: {fileID: 2185459071089583948}
+  cloonAni: {fileID: 816242394398771399}
   target: {fileID: 0}
   bulletPoint: {fileID: 2735866703302314753}
   bulletPrefab: {fileID: 1434569189395777492, guid: c3da5156a1fe5d44b9d370f9760503ee,
     type: 3}
   FlashMuzzle: {fileID: 1434956763918123227}
+--- !u!95 &816242394398771399
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2185459071089583948}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 7f0adab7ab38efe4d8320b6a40e2c5e5, type: 3}
+  m_Controller: {fileID: 9100000, guid: 989665ff8ee3b0040a80338a09cb384e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3380759890185269183
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,7 +678,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7f0adab7ab38efe4d8320b6a40e2c5e5,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.97629607
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f0adab7ab38efe4d8320b6a40e2c5e5,
         type: 3}
@@ -663,7 +688,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7f0adab7ab38efe4d8320b6a40e2c5e5,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.2164396
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f0adab7ab38efe4d8320b6a40e2c5e5,
         type: 3}
@@ -678,7 +703,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 7f0adab7ab38efe4d8320b6a40e2c5e5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7f0adab7ab38efe4d8320b6a40e2c5e5,
         type: 3}
