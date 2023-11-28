@@ -24,6 +24,7 @@ public class CloneBehavior : EnemyBehavior
   
     void Start()
     {
+        
         agent = GetComponent<NavMeshAgent>();
         animation = GetComponent<Animator>();
         randomstopdistaceTarget = Random.Range(5, 12);
@@ -96,6 +97,7 @@ public class CloneBehavior : EnemyBehavior
 
     void HandleFireState()
     {
+        animation.SetTrigger("Start");
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
         // If the player is outside the maximum sight distance, switch back to Walk state
@@ -104,7 +106,7 @@ public class CloneBehavior : EnemyBehavior
             SetState(EnemyState.Walk);
             return;
         }
-
+        Quaternion originalRotation = transform.rotation;
         // If no AI is blocking and the player is within the field of view angle, continue with firing logic
         if (IsInFieldOfView(target.position))
         {
