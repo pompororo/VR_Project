@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f9734e2ae07e34a8ef347c965dc9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 120
   maxSightDistance: 25
   fieldOfViewAngle: 45
   animation: {fileID: 4090035935091833009}

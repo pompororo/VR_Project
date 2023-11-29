@@ -31,5 +31,7 @@ public class LightsaberController : MonoBehaviour
             //blade.SetActive(isBladeOn);
         }
     }
+    
+  
 }
 

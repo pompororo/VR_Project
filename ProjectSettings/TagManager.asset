@@ -12,6 +12,8 @@ TagManager:
   - HandleLightsaber
   - Terrain
   - Lightsaber
+  - SamplesInfoPanel
+  - Start
   layers:
   - Default
   - TransparentFX
