@@ -70,11 +70,11 @@ public abstract class EnemyBehavior : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
-            TakeDamage(50);
+            TakeDamage(100);
         }
         else if (other.CompareTag("BladeSaber"))
         {
-            TakeDamage(80);
+            TakeDamage(150);
         }
     }
 
