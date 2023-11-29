@@ -375,6 +375,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 126063983}
+    - targetCorrespondingSourceObject: {fileID: -318453458037719199, guid: 18f4eafb2a5cc0c49b10ff07c4a922f9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1538153714}
   m_SourcePrefab: {fileID: 100100000, guid: 18f4eafb2a5cc0c49b10ff07c4a922f9, type: 3}
 --- !u!4 &126063956 stripped
 Transform:
@@ -7791,6 +7795,30 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1390534762}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1538153712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -318453458037719199, guid: 18f4eafb2a5cc0c49b10ff07c4a922f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 126063955}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1538153714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538153712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5e48d93b64a9ae4f9fd5a728c8f51af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _renderers:
+  - {fileID: 650024634}
+  _vectorProperties: []
+  _colorProperties: []
+  _floatProperties: []
+  _updateEveryFrame: 1
 --- !u!1 &1541156106
 GameObject:
   m_ObjectHideFlags: 0
