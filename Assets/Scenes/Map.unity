@@ -1217,6 +1217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blade: {fileID: 1127719747}
+  animation: {fileID: 434377817}
 --- !u!95 &434377817
 Animator:
   serializedVersion: 5
@@ -1225,7 +1226,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434377813}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0901e0f4591c18144b912f7ac44a09a2, type: 2}
   m_CullingMode: 0
@@ -8791,7 +8792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1722542362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15109,6 +15110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blade: {fileID: 2490693315115409270}
+  animation: {fileID: 0}
 --- !u!114 &9184433239351252873
 MonoBehaviour:
   m_ObjectHideFlags: 0

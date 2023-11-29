@@ -33,7 +33,7 @@ public class PlayerControllerTest : MonoBehaviour
 
         
         //forcelighting
-        if (OVRInput.GetDown(OVRInput.RawButton.X) || OVRInput.GetDown(OVRInput.RawButton.A)|| Input.GetKeyDown(KeyCode.A))
+        if (OVRInput.GetDown(OVRInput.RawButton.Y) || OVRInput.GetDown(OVRInput.RawButton.B)|| Input.GetKeyDown(KeyCode.A))
         {
             Ray ray = new Ray(transform.position, transform.forward);
             RaycastHit[] hits = Physics.RaycastAll(ray, rayLength);
@@ -67,8 +67,15 @@ public class PlayerControllerTest : MonoBehaviour
 
             if (Enemytargets.Count > 0)
             {
-                EnemytargetTrasforms.transform.position = Enemytargets[0].transform.position;
+                Vector3 newPosition = Enemytargets[0].transform.position; // Get the current position
+
+                // Update the Y component to be +2
+                newPosition.y = 2;
+
+                // Assign the new position to the target transform
+                EnemytargetTrasforms.transform.position = newPosition;
             }
+
             else
             {
                 
