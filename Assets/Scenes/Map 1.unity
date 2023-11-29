@@ -1544,6 +1544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blade: {fileID: 1738325585}
+  animation: {fileID: 0}
 --- !u!95 &312818935
 Animator:
   serializedVersion: 5
@@ -7589,7 +7590,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.08
+  m_Radius: 1.13
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
@@ -7835,6 +7836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blade: {fileID: 1327350966}
+  animation: {fileID: 1344993949}
 --- !u!95 &1344993949
 Animator:
   serializedVersion: 5
@@ -7843,7 +7845,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344993945}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 0901e0f4591c18144b912f7ac44a09a2, type: 2}
   m_CullingMode: 0
@@ -7913,7 +7915,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -7946,7 +7948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344993945}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.51694316, y: 0.48246226, z: -0.5136811, w: 0.48593393}
+  m_LocalRotation: {x: -0.0023066234, y: -0.0024548445, z: -0.7287613, w: 0.6847595}
   m_LocalPosition: {x: 0.248, y: 2.279, z: -17.34}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
@@ -7959,7 +7961,7 @@ Transform:
   - {fileID: 662523122}
   - {fileID: 859942320}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -0.386, y: 90, z: -93.566}
+  m_LocalEulerAnglesHint: {x: -0.386, y: 0, z: -93.566}
 --- !u!1 &1365666197
 GameObject:
   m_ObjectHideFlags: 0
@@ -16001,6 +16003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blade: {fileID: 2490693315115409270}
+  animation: {fileID: 0}
 --- !u!114 &9184433239351252873
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,10 +6,10 @@ public class LightsaberController : MonoBehaviour
 {
     public GameObject blade;
     private bool isBladeOn = false;
-
+    public Animator animation;
     void Update()
     {
-        
+
     }
 
     public void ToggleBlade()
@@ -27,8 +27,8 @@ public class LightsaberController : MonoBehaviour
             {
                 Debug.Log("Close Lightsaber");
             }
-            
-            blade.SetActive(isBladeOn);
+            animation.SetBool("isopen",isBladeOn);
+            //blade.SetActive(isBladeOn);
         }
     }
 }
