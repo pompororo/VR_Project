@@ -2,26 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lightsaberS : MonoBehaviour
+public class LightsaberController : MonoBehaviour
 {
     public GameObject blade;
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
+    private bool isBladeOn = false;
+    public Animator animation;
     void Update()
     {
-        
+
     }
-    public void BladeOn()
+
+    public void ToggleBlade()
     {
-        blade.SetActive(true);
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger)||OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
+        {
+            // Toggle the state
+            isBladeOn = !isBladeOn;
+
+            if (isBladeOn)
+            {
+                Debug.Log("Open Lightsaber");
+            }
+            else
+            {
+                Debug.Log("Close Lightsaber");
+            }
+            animation.SetBool("isopen",isBladeOn);
+            //blade.SetActive(isBladeOn);
+        }
     }
-    public void BladeOff()
-    {
-        blade.SetActive(false);
-    }
+    
+  
 }
+

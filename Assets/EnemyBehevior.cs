@@ -8,6 +8,12 @@ public abstract class EnemyBehavior : MonoBehaviour
     protected EnemyState currentState = EnemyState.Idle;
     public float maxSightDistance ; // Adjust this value as needed
     public float fieldOfViewAngle ; // Adjust this value to set the field of view angle
+    public Animator animation;
+  //  public Animator animation;
+    
+    void Start()
+    {
+    }
     protected Transform FindNearestCover(string coverTag)
     {
         GameObject[] coverObjects = GameObject.FindGameObjectsWithTag(coverTag);
@@ -64,11 +70,11 @@ public abstract class EnemyBehavior : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
-            TakeDamage(50);
+            TakeDamage(100);
         }
         else if (other.CompareTag("BladeSaber"))
         {
-            TakeDamage(80);
+            TakeDamage(150);
         }
     }
 
@@ -76,7 +82,10 @@ public abstract class EnemyBehavior : MonoBehaviour
     {
         // Implement your logic for enemy death here
         // For example, play death animation, destroy the object, etc.
-        Destroy(gameObject);
+       
+        ragdollOn();
+        Invoke("DestroyObject", 2f);
+        //Destroy(gameObject);
     }
     
     protected void SetState(EnemyState newState)
@@ -114,6 +123,16 @@ public abstract class EnemyBehavior : MonoBehaviour
 
         return false;
     }
+
+   void ragdollOn()
+   {
+       animation.enabled = false;
+   }
+   void DestroyObject()
+   {
+       Destroy(gameObject);
+   }
+   
     public enum EnemyState
     {
         Idle,

@@ -6,7 +6,7 @@ using UnityEngine.AI;
 
 public class PlayerControllerTest : MonoBehaviour
 {
-    private NavMeshAgent navMeshAgent;
+
     private Camera mainCamera;
     public GameObject skillobject;
 
@@ -16,17 +16,13 @@ public class PlayerControllerTest : MonoBehaviour
 
     public float duration = 5f; // Set the duration in seconds
     private float timer;
+    public float rayLength = 10f;
     void Start()
     {
         isSkillActive  = false;
         mainCamera = Camera.main;
         Enemytargets = new List<GameObject>();
-        navMeshAgent = GetComponent<NavMeshAgent>();
-        skillobject.SetActive(false);
-        if (navMeshAgent == null)
-        {
-            Debug.LogError("NavMeshAgent component not found on the player GameObject.");
-        }
+    
     }
 
     void Update()
@@ -37,26 +33,21 @@ public class PlayerControllerTest : MonoBehaviour
 
         
         //forcelighting
-        if (mainCamera != null && OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
+        if (OVRInput.GetDown(OVRInput.RawButton.Y) || OVRInput.GetDown(OVRInput.RawButton.B)|| Input.GetKeyDown(KeyCode.A))
         {
-            Vector3 screenPoint = new Vector3(Screen.width * OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger), Screen.height / 2, 0);
-          Ray ray = mainCamera.ScreenPointToRay(screenPoint);
+            Ray ray = new Ray(transform.position, transform.forward);
+            RaycastHit[] hits = Physics.RaycastAll(ray, rayLength);
 
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit))
+            // Check if the ray hits something
+            foreach (var hit in hits)
             {
                 if (hit.collider.CompareTag("Ai"))
                 {
-                    // Check if the object is not null before adding it to the list
-                    if (hit.collider.gameObject != null)
-                    {
-                        Enemytargets.Clear();
-                        Enemytargets.Add(hit.collider.gameObject);
-                    }
+                    Enemytargets.Clear();
+                    Enemytargets.Add(hit.collider.gameObject);
                 }
-                navMeshAgent.SetDestination(hit.point);
             }
+            
         }
         if (Enemytargets.Count > 0)
         {
@@ -76,8 +67,15 @@ public class PlayerControllerTest : MonoBehaviour
 
             if (Enemytargets.Count > 0)
             {
-                EnemytargetTrasforms.transform.position = Enemytargets[0].transform.position;
+                Vector3 newPosition = Enemytargets[0].transform.position; // Get the current position
+
+                // Update the Y component to be +2
+                newPosition.y = 2;
+
+                // Assign the new position to the target transform
+                EnemytargetTrasforms.transform.position = newPosition;
             }
+
             else
             {
                 
@@ -90,6 +88,7 @@ public class PlayerControllerTest : MonoBehaviour
         }
 
 
+      
       
     }
     private void ActivateSkill()
@@ -105,5 +104,11 @@ public class PlayerControllerTest : MonoBehaviour
         isSkillActive = false;
         Enemytargets.Clear();
         timer = 0f;
+    }
+    void OnDrawGizmos()
+    {
+        // Draw the ray in the Scene view for visualization
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position, transform.forward * rayLength);
     }
 }

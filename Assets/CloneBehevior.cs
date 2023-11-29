@@ -20,10 +20,13 @@ public class CloneBehavior : EnemyBehavior
     private float damageOverTimeInterval = 0.25f; // Adjust this value as needed
     private float damageOverTimeTimer = 0f;
 
+ 
   
     void Start()
     {
+        
         agent = GetComponent<NavMeshAgent>();
+        animation = GetComponent<Animator>();
         randomstopdistaceTarget = Random.Range(5, 12);
         shootCooldown = Random.Range(0.9f, 2);
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -61,6 +64,8 @@ public class CloneBehavior : EnemyBehavior
     void HandleWalkState()
     {
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
+    //    animation.SetTrigger("Walk");
+        
         if (IsAnotherAIBlocking())
         {
             MoveToSide();
@@ -92,6 +97,7 @@ public class CloneBehavior : EnemyBehavior
 
     void HandleFireState()
     {
+    //    animation.SetBool("Walk",true);
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
 
         // If the player is outside the maximum sight distance, switch back to Walk state
@@ -100,12 +106,15 @@ public class CloneBehavior : EnemyBehavior
             SetState(EnemyState.Walk);
             return;
         }
-
+        Quaternion originalRotation = transform.rotation;
         // If no AI is blocking and the player is within the field of view angle, continue with firing logic
         if (IsInFieldOfView(target.position))
         {
-            transform.LookAt(target.position);
+            Vector3 targetPositionWithoutY = new Vector3(target.position.x, transform.position.y, target.position.z);
+            transform.LookAt(targetPositionWithoutY);
 
+            // Restore the original X-axis rotation
+            transform.rotation = Quaternion.Euler(originalRotation.eulerAngles.x, transform.rotation.eulerAngles.y, originalRotation.eulerAngles.z);
             timer += Time.deltaTime;
 
             if (timer >= shootCooldown)
@@ -146,8 +155,12 @@ public class CloneBehavior : EnemyBehavior
 
     void MoveToSide()
     {
-        transform.LookAt(target.position);
-        timer += Time.deltaTime;
+        Quaternion originalRotation = transform.rotation;
+        Vector3 targetPositionWithoutY = new Vector3(target.position.x, transform.position.y, target.position.z);
+        transform.LookAt(targetPositionWithoutY);
+
+        // Restore the original X-axis rotation
+        transform.rotation = Quaternion.Euler(originalRotation.eulerAngles.x, transform.rotation.eulerAngles.y, originalRotation.eulerAngles.z);
 
         if (timer >= 1.5f)
         {
