@@ -3634,6 +3634,11 @@ PrefabInstance:
       propertyPath: _hand
       value: 
       objectReference: {fileID: 478205944}
+    - target: {fileID: 7147530562734519489, guid: 2487a3ae4f1630d439ce4a3e9ac03c7b,
+        type: 3}
+      propertyPath: _tangentialVelocityInfluence
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7147530562734519490, guid: 2487a3ae4f1630d439ce4a3e9ac03c7b,
         type: 3}
       propertyPath: m_Name
@@ -12042,6 +12047,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -93.566
+      objectReference: {fileID: 0}
+    - target: {fileID: 4767895104314038966, guid: 6b47e8255cab415418a9cb0884b5b929,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5017452304063939489, guid: 6b47e8255cab415418a9cb0884b5b929,
+        type: 3}
+      propertyPath: _scaleMassWithSize
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7112788652667522851, guid: 6b47e8255cab415418a9cb0884b5b929,
         type: 3}
