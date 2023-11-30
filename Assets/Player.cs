@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -19,20 +18,15 @@ public class Player : MonoBehaviour
 
     public Transform playerAnchor;
     
-<<<<<<< Updated upstream
     public Transform playerRestart;
     public Transform playerDeath;
     public Transform playerWin;
-=======
-     public TextMeshProUGUI healthText;
->>>>>>> Stashed changes
     
     // Start is called before the first frame update
 
     private void Start()
     {
         currentHealth = maxHealth;
-        UpdateHealthText();
     }
 
     // Update is called once per frame
@@ -87,12 +81,5 @@ public class Player : MonoBehaviour
     private void InputDamage(int damage)
     {
         currentHealth -= damage;
-        currentHealth = Mathf.Max(0, currentHealth);
-        UpdateHealthText();
     }
-    
-    private void UpdateHealthText()
-        {
-            healthText.text = "HP: " + currentHealth.ToString();
-        }
 }
