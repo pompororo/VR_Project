@@ -953,7 +953,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 20000
-  maxHealth: 20000
+  maxHealth: 100
+  EndText: {fileID: 1075065356}
   pullForce: 5
   playerAnchor: {fileID: 1627200795}
 --- !u!1 &227641434

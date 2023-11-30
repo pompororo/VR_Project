@@ -8,6 +8,8 @@ public class Player : MonoBehaviour
     public float currentHealth;
     public float maxHealth;
 
+    public GameObject EndText;
+
     private bool isDying;
     
     public float pullForce = 5f; // Adjust the force magnitude
@@ -72,7 +74,8 @@ public class Player : MonoBehaviour
 
         if (isDying)
         {
-            Destroy(gameObject);
+            EndText.SetActive(true);
+            //Destroy(gameObject);
         }
     }
 
