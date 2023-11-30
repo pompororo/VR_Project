@@ -245,13 +245,13 @@ public class GameManager : MonoBehaviour
 
     #endregion
 
-    public TextMeshProUGUI victory;
+   // public TextMeshProUGUI victory;
     private void Victory()
     {
         currentFieldState = AffectFieldSkill.Pause;
         stopSpawning = true;
         clearEnemy = true;
-        victory.gameObject.SetActive(true);
+     //   victory.gameObject.SetActive(true);
         
         FindObjectOfType<Player>().MoveToWinRoom();
     }

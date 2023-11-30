@@ -55,6 +55,7 @@ public class Player : MonoBehaviour
         {
             this.gameObject.transform.position = playerDeath.position;
             currentHealth = maxHealth;
+            isDying = false;
         }
     }
 
