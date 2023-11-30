@@ -74,7 +74,8 @@ public class Player : MonoBehaviour
 
         if (isDying)
         {
-            EndText.SetActive(true);
+        
+          //  EndText.SetActive(true);
             //Destroy(gameObject);
         }
     }
