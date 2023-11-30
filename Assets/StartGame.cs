@@ -11,7 +11,8 @@ public class StartGameObject : MonoBehaviour
         {
             Debug.Log("Start");
             gameManager.SetActive(true);
-            Destroy(gameObject);
+            gameManager.GetComponent<GameManager>().Restart();
+            this.gameObject.SetActive(false);
         }
     }
 }

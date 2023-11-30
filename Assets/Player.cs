@@ -18,6 +18,10 @@ public class Player : MonoBehaviour
 
     public Transform playerAnchor;
     
+    public Transform playerRestart;
+    public Transform playerDeath;
+    public Transform playerWin;
+    
     // Start is called before the first frame update
 
     private void Start()
@@ -49,10 +53,19 @@ public class Player : MonoBehaviour
 
         if (isDying)
         {
-        
-          //  EndText.SetActive(true);
-            //Destroy(gameObject);
+            this.gameObject.transform.position = playerDeath.position;
+            currentHealth = maxHealth;
         }
+    }
+
+    public void MoveToWinRoom()
+    {
+        this.gameObject.transform.position = playerWin.position;
+    }
+
+    public void MoveToRestart()
+    {
+        this.gameObject.transform.position = playerRestart.position;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,7 +75,6 @@ public class Player : MonoBehaviour
                 InputDamage(20);
                 Destroy(other.gameObject);
             }
-        
     }
 
 

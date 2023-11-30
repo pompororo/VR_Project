@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public float currentStamina;
     public float staminaRegenerationRate = 5f;
     
+    
+    
     // Start is called before the first frame update
     void Awoke()
     {
@@ -250,6 +252,15 @@ public class GameManager : MonoBehaviour
         stopSpawning = true;
         clearEnemy = true;
         victory.gameObject.SetActive(true);
+        
+        FindObjectOfType<Player>().MoveToWinRoom();
+    }
+
+    public void Restart()
+    {
+        SpawnGroupOfEnemy(enemyToSpawnCount);
+        currentStamina = maxStamina;
+        waveRound = 1;
     }
 }
 
