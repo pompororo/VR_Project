@@ -565,6 +565,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 20000
   maxHealth: 20000
+  EndText: {fileID: 0}
   pullForce: 5
   playerAnchor: {fileID: 819912177}
 --- !u!4 &229513848 stripped
@@ -4016,6 +4017,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 6025774976327501873, guid: 9fa0bb3511cdf814abe516c803ad7be7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6025774976327501875, guid: 9fa0bb3511cdf814abe516c803ad7be7,
         type: 3}
       propertyPath: m_Layer
@@ -4646,6 +4652,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6687906469686179803, guid: 9fa0bb3511cdf814abe516c803ad7be7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6687906469686179805, guid: 9fa0bb3511cdf814abe516c803ad7be7,
         type: 3}
