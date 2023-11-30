@@ -193,6 +193,7 @@ public class CloneBehavior : EnemyBehavior
 
     void Shoot()
     {
+        this.GetComponent<AudioSource>().Play();
         StartCoroutine(ActivateAndDeactivate());
         GameObject bullet = Instantiate(bulletPrefab, bulletPoint.position, bulletPoint.rotation);
         shootCooldown = Random.Range(0.9f, 2);
