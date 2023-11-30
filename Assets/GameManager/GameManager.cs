@@ -251,7 +251,7 @@ public class GameManager : MonoBehaviour
         currentFieldState = AffectFieldSkill.Pause;
         stopSpawning = true;
         clearEnemy = true;
-        victory.gameObject.SetActive(true);
+       // victory.gameObject.SetActive(true);
         
         FindObjectOfType<Player>().MoveToWinRoom();
     }

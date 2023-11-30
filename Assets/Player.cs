@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
     public float currentHealth;
     public float maxHealth;
 
-    public GameObject EndText;
+  //  public GameObject EndText;
 
     private bool isDying;
     
