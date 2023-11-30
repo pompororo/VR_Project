@@ -12,6 +12,9 @@ public class LightsaberController : MonoBehaviour
 
     }
 
+    public AudioClip openLight;
+    public AudioClip closeLight;
+
     public void ToggleBlade()
     {
         if (OVRInput.GetDown(OVRInput.Button.PrimaryHandTrigger)||OVRInput.Get(OVRInput.Button.SecondaryHandTrigger))
@@ -22,10 +25,14 @@ public class LightsaberController : MonoBehaviour
             if (isBladeOn)
             {
                 Debug.Log("Open Lightsaber");
+                this.GetComponent<AudioSource>().clip = openLight;
+                this.GetComponent<AudioSource>().Play();
             }
             else
             {
                 Debug.Log("Close Lightsaber");
+                this.GetComponent<AudioSource>().clip = closeLight;
+                this.GetComponent<AudioSource>().Play();
             }
             animation.SetBool("isopen",isBladeOn);
             //blade.SetActive(isBladeOn);
