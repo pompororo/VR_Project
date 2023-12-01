@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Restart : MonoBehaviour
 {
+    public GameObject startgame;
     private void OnTriggerEnter(Collider other)
     {
         // Check if the entered collider is the Lightsaber
         if (other.CompareTag("BladeSaber"))
         {
             FindObjectOfType<GameManager>().gameObject.SetActive(false);
-            FindObjectOfType<StartGameObject>().gameObject.SetActive(true);
+            startgame.SetActive(true);
             FindObjectOfType<Player>().MoveToRestart();
         }
     }
