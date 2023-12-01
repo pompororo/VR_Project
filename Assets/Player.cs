@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private OVRPlayerController playercon;
     public float currentHealth;
     public float maxHealth;
 
@@ -31,6 +32,7 @@ public class Player : MonoBehaviour
     {
         currentHealth = maxHealth;
         UpdateHealthText();
+        playercon = gameObject.GetComponent<OVRPlayerController>();
     }
 
     // Update is called once per frame
@@ -57,21 +59,55 @@ public class Player : MonoBehaviour
 
         if (isDying)
         {
-            this.gameObject.transform.position = playerDeath.position;
+          MoveToDeathRoom();
             currentHealth = maxHealth;
+            isDying = false;
         }
     }
 
     public void MoveToWinRoom()
     {
-        this.gameObject.transform.position = playerWin.position;
+        StartCoroutine(winWithDelay());
     }
 
     public void MoveToRestart()
     {
-        this.gameObject.transform.position = playerRestart.position;
+        StartCoroutine(RestartWithDelay());
+    }
+    
+    
+    public void MoveToDeathRoom()
+    {
+        StartCoroutine(DeathWithDelay());
     }
 
+    IEnumerator DeathWithDelay()
+    {
+        playercon.enabled = false;
+        this.gameObject.transform.position = playerDeath.position;
+        
+        yield return new WaitForSeconds(0.3f); // Wait for 1 second
+        
+        playercon.enabled = true;
+    }
+    IEnumerator RestartWithDelay()
+    {
+        playercon.enabled = false;
+        this.gameObject.transform.position = playerRestart.position;
+        
+        yield return new WaitForSeconds(0.3f); // Wait for 1 second
+        
+        playercon.enabled = true;
+    }
+    IEnumerator winWithDelay()
+    {
+        playercon.enabled = false;
+        this.gameObject.transform.position = playerWin.position;
+        
+        yield return new WaitForSeconds(0.3f); // Wait for 1 second
+        
+        playercon.enabled = true;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Bullet"))
@@ -98,3 +134,5 @@ public class Player : MonoBehaviour
             healthText.text = "HP: " + currentHealth.ToString();
         }
 }
+
+
