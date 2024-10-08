@@ -11,6 +11,7 @@ public class Restart : MonoBehaviour
         if (other.CompareTag("BladeSaber"))
         {
             FindObjectOfType<GameManager>().gameObject.SetActive(false);
+            startgame.GetComponent<GameManager>().Restart();
             startgame.SetActive(true);
             FindObjectOfType<Player>().MoveToRestart();
         }
